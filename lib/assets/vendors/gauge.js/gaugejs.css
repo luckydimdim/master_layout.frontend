@@ -1,0 +1,81 @@
+/*
+Error: Undefined variable: "$text-muted".
+        on line 36 of gaugejs.scss
+
+31:     label {
+32:         display: block;
+33:         margin-top: -10px;
+34:         font-size: 10px;
+35:         font-weight: 600;
+36:         color: $text-muted;
+37:         text-transform: uppercase;
+38:     }
+39: }
+40: 
+41: .gaugejs-wrap.sparkline {
+
+Backtrace:
+gaugejs.scss:36
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin.rb:82:in `update_stylesheets'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:51:in `process_result'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+d:/Env/ChocolateyTools/ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/bin/scss:13:in `<top (required)>'
+d:/Env/ChocolateyTools/ruby23/bin/scss:23:in `load'
+d:/Env/ChocolateyTools/ruby23/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$text-muted\".\A         on line 36 of gaugejs.scss\A \A 31:     label {\A 32:         display: block;\A 33:         margin-top: -10px;\A 34:         font-size: 10px;\A 35:         font-weight: 600;\A 36:         color: $text-muted;\A 37:         text-transform: uppercase;\A 38:     }\A 39: }\A 40: \A 41: .gaugejs-wrap.sparkline {"; }
