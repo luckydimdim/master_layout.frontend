@@ -3116,7 +3116,7 @@ header.navbar {
     height: 55px;
     padding: 0.5rem 1rem;
     background-color: #20a8d8;
-    background-image: url("/img/logo.png");
+    background-image: url("packages/master_layout/src/img/logo.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 108px auto;
