@@ -1,0 +1,1 @@
+export 'src/master_layout_component.dart';
