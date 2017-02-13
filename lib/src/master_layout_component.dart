@@ -12,7 +12,7 @@ class MasterLayoutComponent implements AfterViewInit {
     var script = new ScriptElement()
       ..async = true
       ..type = 'text/javascript'
-      ..src = 'packages/master_layout/src/assets/js/app.js';
+      ..src = 'packages/master_layout/assets/js/app.js';
     document.body.append(script);
   }
 }
