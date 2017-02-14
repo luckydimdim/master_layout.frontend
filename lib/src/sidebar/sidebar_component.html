@@ -1,0 +1,64 @@
+<div class="sidebar">
+	
+	<nav class="sidebar-nav">
+		<ul class="nav">
+			
+			<li class="nav-item">
+				<a class="nav-link" [cmRouterLink]="['Dashboard']"><i class="icon-home"></i> Главная </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" [cmRouterLink]="['ContractList']"><i class="icon-docs"></i> Договоры </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" [cmRouterLink]="['RequestList']"><i class="icon-note"></i> Заявки </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" [cmRouterLink]="['ObjectBudgetList']"><i class="icon-calculator"></i> Бюджеты </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" [cmRouterLink]="['ContractorList']"><i class="icon-people"></i> Подрядчики </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" [cmRouterLink]="['ObjectList']"><i class="icon-grid"></i> Объекты </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" [cmRouterLink]="['Analytics']"><i class="icon-pie-chart"></i> Аналитика </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#"><i class="icon-graph"></i> Курсы валют </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" [cmRouterLink]="['PaymentBudgetList']"><i class="icon-wallet"></i> Платежный бюджет </a>
+			</li>
+			
+			<li class="divider"></li>
+			<li class="nav-title">
+				Статистика
+			</li>
+			<li class="nav-item px-1 hidden-cn">
+				<div class="text-uppercase mb-q">
+					<small><b>Исполнение договоров</b></small>
+				</div>
+				<progress class="progress progress-xs progress-info m-0" value="77" max="100">77%</progress>
+				<small class="text-muted">77% (2 000 000 <i class="fa fa-rub"></i>/ 2 400 000 <i class="fa fa-rub"></i>)</small>
+			</li>
+			<li class="nav-item px-1 hidden-cn">
+				<div class="text-uppercase mb-q">
+					<small><b>Отклонение по бюджету</b>
+					</small>
+				</div>
+				<progress class="progress progress-xs progress-warning m-0" value="4" max="100">4%</progress>
+				<small class="text-muted">4% (300 000 <i class="fa fa-rub"></i>)</small>
+			</li>
+			<li class="nav-item px-1 hidden-cn">
+				<div class="text-uppercase mb-q">
+					<small><b>Платежный бюджет</b>
+					</small>
+				</div>
+				<progress class="progress progress-xs progress-danger m-0" value="95" max="100">95%</progress>
+				<small class="text-muted">95% заявок согласовано</small>
+			</li>
+		
+		</ul>
+	</nav>
+</div>
