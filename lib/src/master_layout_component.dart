@@ -1,7 +1,7 @@
 import 'dart:html';
 import 'package:angular2/core.dart';
 import 'package:angular2/router.dart';
-import 'cm_router_link.dart';
+import 'package:angular_utils/directives.dart';
 
 @Component(selector: 'master-layout')
 @View(
