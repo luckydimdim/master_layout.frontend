@@ -6,6 +6,14 @@ hr.transparent {
     display: table;
 }
 
+.d-table-row {
+    display: table-row;
+}
+
+.d-table-cell {
+    display: table-cell;
+}
+
 .d-100vh-va-middle {
     display: table-cell;
     height: 100vh;
