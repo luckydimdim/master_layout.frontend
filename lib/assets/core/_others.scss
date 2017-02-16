@@ -19,3 +19,15 @@ hr.transparent {
     height: 100vh;
     vertical-align: middle;
 }
+
+.d-100vh-va-top {
+    display: table-cell;
+    height: 100vh;
+    vertical-align: middle;
+}
+
+.d-100vh-va-bottom {
+    display: table-cell;
+    height: 100vh;
+    vertical-align: middle;
+}
