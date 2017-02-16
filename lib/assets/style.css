@@ -5015,6 +5015,9 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   left: 0;
   z-index: 1030; }
 
+.pos-f {
+  position: fixed; }
+
 .text-justify {
   text-align: justify !important; }
 
