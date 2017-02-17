@@ -9007,11 +9007,11 @@ ul.leaders span + span {
   margin-top: -100px; }
 
 /** /PRELOADER **/
-.emailApp {
+.cm-contract {
   position: relative;
   background: #fff;
   border: 1px solid #d1d4d7; }
-  .emailApp nav {
+  .cm-contract nav {
     /*position: absolute !important;*/
     /*top: 0;
     left: 0;*/
@@ -9019,146 +9019,146 @@ ul.leaders span + span {
     /*height: 100%;*/
     /*border-right: 1px solid $border-color;*/
     padding: 15px; }
-    .emailApp nav .btn-block {
+    .cm-contract nav .btn-block {
       margin-bottom: 15px; }
-    .emailApp nav ul.nav li.nav-item {
+    .cm-contract nav ul.nav li.nav-item {
       margin: 0;
       position: relative; }
-      .emailApp nav ul.nav li.nav-item a.nav-link {
+      .cm-contract nav ul.nav li.nav-item a.nav-link {
         font-size: 12px;
         font-weight: 400;
         text-transform: uppercase;
         text-decoration: none;
         display: block;
         padding: 0 10px; }
-        .emailApp nav ul.nav li.nav-item a.nav-link i {
+        .cm-contract nav ul.nav li.nav-item a.nav-link i {
           width: 20px;
           text-align: center;
           margin: 0 10px 0 0;
           font-size: 14px; }
-        .emailApp nav ul.nav li.nav-item a.nav-link .tag {
+        .cm-contract nav ul.nav li.nav-item a.nav-link .tag {
           float: right;
           margin-top: 16px;
           margin-left: 10px; }
-      .emailApp nav ul.nav li.nav-item a.nav-link {
+      .cm-contract nav ul.nav li.nav-item a.nav-link {
         line-height: 40px;
         color: #2a2c36;
         border-bottom: 1px solid #d1d4d7; }
-  .emailApp main {
+  .cm-contract main {
     padding: 15px 15px 15px 15px; }
-    .emailApp main .toolbar {
+    .cm-contract main .toolbar {
       margin: -15px -15px 15px -15px;
       padding: 15px;
       border-bottom: 1px solid #d1d4d7; }
-    .emailApp main ul.messages-list {
+    .cm-contract main ul.messages-list {
       list-style: none;
       margin: 15px -15px 0 -15px;
       padding: 15px 15px 0 15px; }
-      .emailApp main ul.messages-list li {
+      .cm-contract main ul.messages-list li {
         cursor: pointer;
         margin-bottom: 10px;
         padding: 10px; }
-        .emailApp main ul.messages-list li a {
+        .cm-contract main ul.messages-list li a {
           color: black; }
-          .emailApp main ul.messages-list li a:hover {
+          .cm-contract main ul.messages-list li a:hover {
             text-decoration: none; }
-        .emailApp main ul.messages-list li.unread .header, .emailApp main ul.messages-list li.unread .title {
+        .cm-contract main ul.messages-list li.unread .header, .cm-contract main ul.messages-list li.unread .title {
           font-weight: bold; }
-        .emailApp main ul.messages-list li:hover {
+        .cm-contract main ul.messages-list li:hover {
           border: 1px solid #d1d4d7;
           padding: 9px; }
-          .emailApp main ul.messages-list li:hover .action {
+          .cm-contract main ul.messages-list li:hover .action {
             color: #d1d4d7; }
-        .emailApp main ul.messages-list li .header {
+        .cm-contract main ul.messages-list li .header {
           margin: 0 0 5px 0; }
-          .emailApp main ul.messages-list li .header .from {
+          .cm-contract main ul.messages-list li .header .from {
             width: 49.9%;
             white-space: nowrap;
             overflow: hidden !important;
             text-overflow: ellipsis; }
-          .emailApp main ul.messages-list li .header .date {
+          .cm-contract main ul.messages-list li .header .date {
             width: 50%;
             text-align: right;
             float: right; }
-        .emailApp main ul.messages-list li .title {
+        .cm-contract main ul.messages-list li .title {
           margin: 0 0 5px 0;
           white-space: nowrap;
           overflow: hidden !important;
           text-overflow: ellipsis; }
-        .emailApp main ul.messages-list li .description {
+        .cm-contract main ul.messages-list li .description {
           font-size: 12px;
           padding-left: 29px; }
-        .emailApp main ul.messages-list li .action {
+        .cm-contract main ul.messages-list li .action {
           display: inline-block;
           width: 16px;
           text-align: center;
           margin-right: 10px;
           color: #d1d4d7; }
-          .emailApp main ul.messages-list li .action .fa-check-square-o {
+          .cm-contract main ul.messages-list li .action .fa-check-square-o {
             margin: 0 -1px 0 1px; }
-          .emailApp main ul.messages-list li .action .fa-square {
+          .cm-contract main ul.messages-list li .action .fa-square {
             float: left;
             margin-top: -16px;
             margin-left: 4px;
             font-size: 11px;
             color: white; }
-          .emailApp main ul.messages-list li .action .fa-star.bg {
+          .cm-contract main ul.messages-list li .action .fa-star.bg {
             float: left;
             margin-top: -16px;
             margin-left: 3px;
             font-size: 12px;
             color: white; }
-    .emailApp main .message .message-title {
+    .cm-contract main .message .message-title {
       margin-top: 30px;
       padding-top: 10px;
       font-weight: bold;
       font-size: 14px; }
-    .emailApp main .message .header {
+    .cm-contract main .message .header {
       margin: 20px 0 30px 0;
       padding: 10px 0 10px 0;
       border-top: 1px solid #d1d4d7;
       border-bottom: 1px solid #d1d4d7; }
-      .emailApp main .message .header .avatar {
+      .cm-contract main .message .header .avatar {
         height: 34px;
         width: 34px;
         float: left;
         margin-right: 10px; }
-      .emailApp main .message .header i {
+      .cm-contract main .message .header i {
         margin-top: 1px; }
-      .emailApp main .message .header .from {
+      .cm-contract main .message .header .from {
         display: inline-block;
         width: 50%;
         font-size: 12px;
         margin-top: -2px;
         color: #d1d4d7; }
-        .emailApp main .message .header .from span {
+        .cm-contract main .message .header .from span {
           display: block;
           font-size: 14px;
           font-weight: bold; }
-      .emailApp main .message .header .date {
+      .cm-contract main .message .header .date {
         display: inline-block;
         width: 29%;
         text-align: right;
         float: right;
         font-size: 12px;
         margin-top: 18px; }
-    .emailApp main .message .attachments {
+    .cm-contract main .message .attachments {
       border-top: 3px solid #f8f9fa;
       border-bottom: 3px solid #f8f9fa;
       padding: 10px 0px;
       margin-bottom: 20px;
       font-size: 12px; }
-      .emailApp main .message .attachments ul {
+      .cm-contract main .message .attachments ul {
         list-style: none;
         margin: 0 0 0 -40px; }
-        .emailApp main .message .attachments ul li {
+        .cm-contract main .message .attachments ul li {
           margin: 10px 0; }
-          .emailApp main .message .attachments ul li .tag {
+          .cm-contract main .message .attachments ul li .tag {
             padding: 2px 4px; }
-          .emailApp main .message .attachments ul li span.quickMenu {
+          .cm-contract main .message .attachments ul li span.quickMenu {
             float: right;
             text-align: right; }
-            .emailApp main .message .attachments ul li span.quickMenu .fa {
+            .cm-contract main .message .attachments ul li span.quickMenu .fa {
               padding: 5px 0 5px 25px;
               font-size: 14px;
               margin: -2px 0px 0px 5px;
