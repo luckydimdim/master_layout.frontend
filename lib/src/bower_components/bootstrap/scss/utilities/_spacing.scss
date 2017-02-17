@@ -35,6 +35,10 @@
 
 // Positioning
 
+.pos-f {
+  position: fixed;
+}
+
 .pos-f-t {
   position: fixed;
   top: 0;
@@ -43,6 +47,10 @@
   z-index: $zindex-navbar-fixed;
 }
 
-.pos-f {
+.pos-f-m {
   position: fixed;
+  top: 50%;
+  right: 0;
+  left: 0;
+  z-index: $zindex-navbar-fixed;
 }

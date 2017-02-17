@@ -4781,6 +4781,9 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important; }
 
+.pos-f {
+  position: fixed; }
+
 .pos-f-t {
   position: fixed;
   top: 0;
@@ -4788,8 +4791,12 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   left: 0;
   z-index: 1030; }
 
-.pos-f {
-  position: fixed; }
+.pos-f-m {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  left: 0;
+  z-index: 1030; }
 
 .text-justify {
   text-align: justify !important; }

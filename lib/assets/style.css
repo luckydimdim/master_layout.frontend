@@ -5008,6 +5008,9 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important; }
 
+.pos-f {
+  position: fixed; }
+
 .pos-f-t {
   position: fixed;
   top: 0;
@@ -5015,8 +5018,12 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   left: 0;
   z-index: 1030; }
 
-.pos-f {
-  position: fixed; }
+.pos-f-m {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  left: 0;
+  z-index: 1030; }
 
 .text-justify {
   text-align: justify !important; }
@@ -6025,7 +6032,7 @@ html.sidebar-opened {
 body {
   position: relative;
   min-height: 100vh;
-  padding: 1.5rem 0 0 0;
+  padding: 0;
   margin: 0; }
   body .bd-title.main {
     padding: 0 !important; }
@@ -8992,6 +8999,14 @@ ul.leaders span + span {
   background: white; }
 
 /** /DOTS **/
+/** PRELOADER **/
+.cm-preloader-cube {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px; }
+
+/** /PRELOADER **/
 .emailApp {
   position: relative;
   background: #fff;
