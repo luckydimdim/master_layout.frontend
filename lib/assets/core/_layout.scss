@@ -237,6 +237,10 @@ body.aside-menu-open {
         right: $aside-menu-width;
     }
 
+    @include media-breakpoint-down(lg) {
+        right: 190px;
+    }
+
     &.aside-menu-off-canvas {
         .main {
             right: 0;

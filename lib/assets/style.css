@@ -6223,6 +6223,9 @@ body.aside-menu-open .aside-menu {
   right: 0; }
 body.aside-menu-open .footer {
   right: 250px; }
+@media (max-width: 1199px) {
+  body.aside-menu-open {
+    right: 190px; } }
 body.aside-menu-open.aside-menu-off-canvas .main {
   right: 0;
   padding-right: 0; }
