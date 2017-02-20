@@ -253,6 +253,12 @@ body:not(.top-nav) {
                 }
             }
         }
+
+        @include media-breakpoint-down(lg) {
+            ul.nav {
+                width: 170px;
+            }
+        }
     }
 
     @include media-breakpoint-down(lg) {
@@ -376,6 +382,12 @@ body:not(.top-nav) {
                             width: $sidebar-width + $sidebar-compact-width;
                         }
 
+                        @include media-breakpoint-down(lg) {
+                            > a.nav-link {
+                                width: 169px;
+                            }
+                        }
+
                         > ul, > ol {
                             max-height: 10000px;
                             display: inline;
@@ -388,6 +400,16 @@ body:not(.top-nav) {
                                     width: $sidebar-width;
                                 }
                             }
+
+                            @include media-breakpoint-down(lg) {
+                                li {
+                                    width: 169px;
+
+                                    a.nav-link {
+                                        width: 169px;
+                                    }
+                                }
+                            }
                         }
 
                         &.nav-dropdown {
@@ -396,6 +418,12 @@ body:not(.top-nav) {
                                     display: inline;
                                 }
                             }
+                        }
+                    }
+
+                    @include media-breakpoint-down(lg) {
+                        &:hover {
+                            width: 169px;
                         }
                     }
                 }

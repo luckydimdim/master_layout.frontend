@@ -6357,6 +6357,9 @@ body:not(.top-nav) .sidebar {
           color: #818a91;
           text-align: center;
           vertical-align: middle; }
+  @media (max-width: 1199px) {
+    body:not(.top-nav) .sidebar ul.nav {
+      width: 170px; } }
 @media (max-width: 1199px) {
   body:not(.top-nav) .sidebar {
     width: 170px; } }
@@ -6429,7 +6432,11 @@ body:not(.top-nav) .sidebar {
         background: #20a8d8;
         transition: 0s; }
         body.compact-nav .sidebar ul.nav li.nav-item:hover > a.nav-link {
-          width: 250px; }
+          width: 250px; } }
+      @media (min-width: 576px) and (max-width: 1199px) {
+        body.compact-nav .sidebar ul.nav li.nav-item:hover > a.nav-link {
+          width: 169px; } }
+@media (min-width: 576px) {
         body.compact-nav .sidebar ul.nav li.nav-item:hover > ul, body.compact-nav .sidebar ul.nav li.nav-item:hover > ol {
           max-height: 10000px;
           display: inline;
@@ -6437,9 +6444,19 @@ body:not(.top-nav) .sidebar {
           body.compact-nav .sidebar ul.nav li.nav-item:hover > ul li, body.compact-nav .sidebar ul.nav li.nav-item:hover > ol li {
             width: 200px; }
             body.compact-nav .sidebar ul.nav li.nav-item:hover > ul li a.nav-link, body.compact-nav .sidebar ul.nav li.nav-item:hover > ol li a.nav-link {
-              width: 200px; }
+              width: 200px; } }
+        @media (min-width: 576px) and (max-width: 1199px) {
+          body.compact-nav .sidebar ul.nav li.nav-item:hover > ul li, body.compact-nav .sidebar ul.nav li.nav-item:hover > ol li {
+            width: 169px; }
+            body.compact-nav .sidebar ul.nav li.nav-item:hover > ul li a.nav-link, body.compact-nav .sidebar ul.nav li.nav-item:hover > ol li a.nav-link {
+              width: 169px; } }
+@media (min-width: 576px) {
         body.compact-nav .sidebar ul.nav li.nav-item:hover.nav-dropdown.open > ul, body.compact-nav .sidebar ul.nav li.nav-item:hover.nav-dropdown.open > ol {
           display: inline; } }
+    @media (min-width: 576px) and (max-width: 1199px) {
+      body.compact-nav .sidebar ul.nav li.nav-item:hover {
+        width: 169px; } }
+
 nav.top-nav {
   position: absolute;
   top: 55px;
