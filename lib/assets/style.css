@@ -1894,6 +1894,10 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   .form-inline .has-feedback .form-control-feedback {
     top: 0; } }
 
+@media (max-width: 1199px) {
+  .form-control {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem; } }
 .btn, .well.well-sm.bg-faded .btn-sm, .well.well-sm.bg-faded .btn-group-sm > .btn {
   display: inline-block;
   font-weight: normal;

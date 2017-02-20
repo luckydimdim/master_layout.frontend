@@ -1,0 +1,12 @@
+// scss-lint:disable QualifyingElement
+
+//
+// Textual form controls
+//
+
+@include media-breakpoint-down(lg) {
+  .form-control {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+  }
+}
