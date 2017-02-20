@@ -5965,6 +5965,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
 
+@media (max-width: 1199px) {
+  body {
+    font-size: 0.675rem; } }
 .font-xs {
   font-size: .75rem !important; }
 

@@ -3,6 +3,12 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+@include media-breakpoint-down(lg) {
+    body {
+        font-size: 0.675rem;
+    }
+}
+
 .font-xs {
     font-size: .75rem !important;
 }
