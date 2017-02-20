@@ -1655,8 +1655,8 @@ pre {
   border: 0; }
 
 @media (max-width: 1199px) {
-  th,
-  td {
+  .table th,
+  .table td {
     padding: 0.4rem; } }
 .form-control {
   display: block;
