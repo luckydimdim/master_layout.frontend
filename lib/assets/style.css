@@ -6277,6 +6277,10 @@ body:not(.top-nav) .sidebar {
       font-weight: 600;
       color: #818a91;
       text-transform: uppercase; }
+    @media (max-width: 1199px) {
+      body:not(.top-nav) .sidebar ul.nav li.nav-title {
+        padding: 0.5rem 1rem;
+        font-size: 0.675rem; } }
     body:not(.top-nav) .sidebar ul.nav li.divider {
       height: 10px; }
     body:not(.top-nav) .sidebar ul.nav li.nav-item {
@@ -6334,6 +6338,9 @@ body:not(.top-nav) .sidebar {
           text-align: center;
           content: "\2039";
           transition: .3s; }
+      @media (max-width: 1199px) {
+        body:not(.top-nav) .sidebar ul.nav li.nav-item a.nav-link {
+          padding: 0.4rem 1rem; } }
       body:not(.top-nav) .sidebar ul.nav li.nav-item.nav-dropdown.open {
         background: #e9ecef; }
         body:not(.top-nav) .sidebar ul.nav li.nav-item.nav-dropdown.open > ul, body:not(.top-nav) .sidebar ul.nav li.nav-item.nav-dropdown.open > ol {

@@ -78,6 +78,13 @@ body:not(.top-nav) {
                 text-transform: uppercase;
             }
 
+            @include media-breakpoint-down(lg) {
+              li.nav-title {
+                padding: 0.5rem 1rem;
+                font-size: 0.675rem;
+              }
+            }
+
             li.divider {
                 height: 10px;
             }
@@ -173,6 +180,12 @@ body:not(.top-nav) {
                             transition: .3s;
                         }
                     }
+                }
+
+                @include media-breakpoint-down(lg) {
+                  a.nav-link {
+                    padding: 0.4rem 1rem;
+                  }
                 }
 
                 &.nav-dropdown {
