@@ -9039,11 +9039,15 @@ ul.leaders span + span {
           margin-left: 10px; }
       @media (max-width: 1199px) {
         .cm-contract nav ul.nav li.nav-item a.nav-link {
-          font-size: 0.675rem; } }
+          font-size: 0.5rem; } }
       .cm-contract nav ul.nav li.nav-item a.nav-link {
         line-height: 40px;
         color: #2a2c36;
         border-bottom: 1px solid #d1d4d7; }
+  @media (max-width: 1199px) {
+    .cm-contract nav {
+      width: 170px;
+      padding: 3px; } }
   .cm-contract main {
     padding: 15px 15px 15px 15px; }
     .cm-contract main .toolbar {
