@@ -2297,6 +2297,10 @@ input[type="button"].btn-block {
   right: 6px;
   font-size: 9px; }
 
+@media (max-width: 1199px) {
+  .btn, .well.well-sm.bg-faded .btn-sm, .well.well-sm.bg-faded .btn-group-sm > .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem; } }
 .fade {
   opacity: 0;
   transition: opacity .15s linear; }

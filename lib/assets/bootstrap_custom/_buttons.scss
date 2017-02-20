@@ -1,9 +1,14 @@
 .btn {
-
     .tag {
         position: absolute;
         top: 2px;
         right: 6px;
         font-size: 9px;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .btn {
+        @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $btn-border-radius-sm);
     }
 }
