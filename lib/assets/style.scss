@@ -9,9 +9,11 @@
 @import "../src/bower_components/bootstrap/scss/normalize";
 @import "../src/bower_components/bootstrap/scss/print";
 
+
 // Core CSS
 @import "../src/bower_components/bootstrap/scss/reboot";
 @import "../src/bower_components/bootstrap/scss/type";
+@import "bootstrap_custom/type";
 @import "../src/bower_components/bootstrap/scss/images";
 @import "../src/bower_components/bootstrap/scss/code";
 @import "../src/bower_components/bootstrap/scss/grid";
