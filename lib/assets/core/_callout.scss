@@ -18,6 +18,13 @@
     }
 }
 
+@include media-breakpoint-down(lg) {
+    .callout {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+}
+
 .callout-bordered {
     border: 1px solid $border-color;
     border-left-width: .25rem;

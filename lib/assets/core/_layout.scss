@@ -190,6 +190,12 @@ body.sidebar-nav {
         padding-left: $sidebar-width;
     }
 
+    @include media-breakpoint-down(lg) {
+        .main {
+            padding-left: 190px;
+        }
+    }
+
     .footer {
         left: $sidebar-width;
     }
@@ -209,6 +215,12 @@ body.top-nav {
 body.aside-menu-open {
     .main {
         padding-right: $aside-menu-width;
+    }
+
+    @include media-breakpoint-down(lg) {
+        .main {
+            padding-right: 180px;
+        }
     }
 
     .aside-menu {
