@@ -3695,6 +3695,9 @@ body:not(.top-nav) .sidebar ul.nav li.nav-item .navbar-nav a.nav-link.router-lin
   padding: 0.275rem 0.75rem;
   font-size: 0.875rem; }
 
+@media (max-width: 1199px) {
+  .page-link, .pagination-datatables li a, .pagination li a {
+    padding: 0.2rem 0.5rem; } }
 .tag {
   display: inline-block;
   padding: 0.25em 0.4em;
