@@ -7,7 +7,6 @@
 }
 
 .table-align-middle {
-
     td {
         vertical-align: middle;
     }
@@ -16,5 +15,12 @@
 .table-clear {
     td {
         border: 0;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    th,
+    td {
+        padding: 0.4rem;
     }
 }

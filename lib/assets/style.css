@@ -1654,6 +1654,10 @@ pre {
 .table-clear td {
   border: 0; }
 
+@media (max-width: 1199px) {
+  th,
+  td {
+    padding: 0.4rem; } }
 .form-control {
   display: block;
   width: 100%;
@@ -6203,7 +6207,7 @@ body.sidebar-nav .footer {
   left: 200px; }
 @media (max-width: 1199px) {
   body.sidebar-nav .footer {
-    left: 169; } }
+    left: 169px; } }
 
 body.top-nav .layout-toggler {
   display: none !important; }
