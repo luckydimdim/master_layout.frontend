@@ -6224,7 +6224,7 @@ body.aside-menu-open .aside-menu {
 body.aside-menu-open .footer {
   right: 250px; }
 @media (max-width: 1199px) {
-  body.aside-menu-open {
+  body.aside-menu-open .footer {
     right: 190px; } }
 body.aside-menu-open.aside-menu-off-canvas .main {
   right: 0;

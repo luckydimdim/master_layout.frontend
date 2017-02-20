@@ -238,7 +238,9 @@ body.aside-menu-open {
     }
 
     @include media-breakpoint-down(lg) {
-        right: 190px;
+        .footer {
+            right: 190px;
+        }
     }
 
     &.aside-menu-off-canvas {
