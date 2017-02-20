@@ -1,4 +1,5 @@
 import 'dart:html';
+import 'dart:math';
 import 'package:angular2/core.dart';
 
 import 'breadcrumb/breadcrumb_component.dart';
