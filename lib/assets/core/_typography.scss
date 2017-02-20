@@ -6,6 +6,7 @@ body {
 @include media-breakpoint-down(lg) {
     body {
         font-size: 0.675rem;
+        line-height: 1.05rem;
     }
 }
 

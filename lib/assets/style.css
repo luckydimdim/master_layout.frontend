@@ -6004,7 +6004,8 @@ body {
 
 @media (max-width: 1199px) {
   body {
-    font-size: 0.675rem; } }
+    font-size: 0.675rem;
+    line-height: 1.05rem; } }
 .font-xs {
   font-size: .75rem !important; }
 
