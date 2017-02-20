@@ -9058,6 +9058,9 @@ ul.leaders span + span {
       margin: -15px -15px 15px -15px;
       padding: 15px;
       border-bottom: 1px solid #d1d4d7; }
+    @media (max-width: 1199px) {
+      .cm-contract main .toolbar {
+        padding: 8px; } }
     .cm-contract main ul.messages-list {
       list-style: none;
       margin: 15px -15px 0 -15px;
