@@ -6021,6 +6021,30 @@ body {
 .font-5xl {
   font-size: 2.5rem !important; }
 
+@media (max-width: 1199px) {
+  .font-xs {
+    font-size: 0.525rem !important; }
+
+  .font-sm {
+    font-size: 0.595rem !important; }
+
+  .font-lg {
+    font-size: 0.7rem !important; }
+
+  .font-xl {
+    font-size: 0.875rem !important; }
+
+  .font-2xl {
+    font-size: 1.05rem !important; }
+
+  .font-3xl {
+    font-size: 1.225rem !important; }
+
+  .font-4xl {
+    font-size: 1.4rem !important; }
+
+  .font-5xl {
+    font-size: 1.75rem !important; } }
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
