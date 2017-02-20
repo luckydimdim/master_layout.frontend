@@ -68,3 +68,9 @@
         }
     }
 }
+
+@include media-breakpoint-down(lg) {
+    .aside-menu {
+        width: 190px;
+    }
+}
