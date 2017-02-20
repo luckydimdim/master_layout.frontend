@@ -199,6 +199,12 @@ body.sidebar-nav {
     .footer {
         left: $sidebar-width;
     }
+
+    @include media-breakpoint-down(lg) {
+        .footer {
+            left: 169px;
+        }
+    }
 }
 
 body.top-nav {

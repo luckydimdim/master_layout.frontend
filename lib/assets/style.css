@@ -6201,6 +6201,9 @@ body.sidebar-nav .main {
     padding-left: 170px; } }
 body.sidebar-nav .footer {
   left: 200px; }
+@media (max-width: 1199px) {
+  body.sidebar-nav .footer {
+    left: 169; } }
 
 body.top-nav .layout-toggler {
   display: none !important; }
