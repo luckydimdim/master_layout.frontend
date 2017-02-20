@@ -1897,7 +1897,8 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 @media (max-width: 1199px) {
   .form-control {
     padding-top: 0.4rem;
-    padding-bottom: 0.4rem; } }
+    padding-bottom: 0.4rem;
+    font-size: 0.625rem; } }
 .btn, .well.well-sm.bg-faded .btn-sm, .well.well-sm.bg-faded .btn-group-sm > .btn {
   display: inline-block;
   font-weight: normal;
