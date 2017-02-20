@@ -2708,6 +2708,10 @@ tbody.collapse.in {
   white-space: nowrap;
   vertical-align: middle; }
 
+@media (max-width: 1199px) {
+  .input-group-addon {
+    padding-top: 0.3rem;
+    padding-top: 0.3rem; } }
 .nav {
   padding-left: 0;
   margin-bottom: 0;
