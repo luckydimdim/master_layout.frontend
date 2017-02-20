@@ -6427,12 +6427,12 @@ body:not(.top-nav) .sidebar {
         body.compact-nav .sidebar ul.nav li.nav-item.nav-dropdown.open > ul, body.compact-nav .sidebar ul.nav li.nav-item.nav-dropdown.open > ol {
           display: none; }
       body.compact-nav .sidebar ul.nav li.nav-item:hover {
-        width: 250px;
+        width: 200px;
         overflow: visible;
         background: #20a8d8;
         transition: 0s; }
         body.compact-nav .sidebar ul.nav li.nav-item:hover > a.nav-link {
-          width: 250px; } }
+          width: 200px; } }
       @media (min-width: 576px) and (max-width: 1199px) {
         body.compact-nav .sidebar ul.nav li.nav-item:hover > a.nav-link {
           width: 169px; } }

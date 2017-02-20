@@ -373,13 +373,13 @@ body:not(.top-nav) {
                     }
 
                     &:hover {
-                        width: $sidebar-width + $sidebar-compact-width;
+                        width: $sidebar-width;
                         overflow: visible;
                         background: $sidebar-nav-link-hover-bg;
                         transition: 0s;
 
                         > a.nav-link {
-                            width: $sidebar-width + $sidebar-compact-width;
+                            width: $sidebar-width;
                         }
 
                         @include media-breakpoint-down(lg) {
