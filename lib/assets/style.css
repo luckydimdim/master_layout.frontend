@@ -3147,6 +3147,9 @@ header.navbar {
     background-position: center center;
     background-size: 108px auto;
     border-bottom: 1px solid #1d97c2; }
+  @media (max-width: 1199px) {
+    header.navbar a.navbar-brand {
+      width: 169px; } }
 
 header.navbar .navbar-brand {
   margin-right: 0; }
@@ -6162,7 +6165,7 @@ body.sidebar-nav .main {
   padding-left: 200px; }
 @media (max-width: 1199px) {
   body.sidebar-nav .main {
-    padding-left: 190px; } }
+    padding-left: 170px; } }
 body.sidebar-nav .footer {
   left: 200px; }
 
@@ -6330,6 +6333,9 @@ body:not(.top-nav) .sidebar {
           color: #818a91;
           text-align: center;
           vertical-align: middle; }
+@media (max-width: 1199px) {
+  body:not(.top-nav) .sidebar {
+    width: 170px; } }
 
 @media (min-width: 576px) {
   body.compact-nav .hidden-cn {
@@ -8200,7 +8206,7 @@ hr.transparent {
 
 @media (max-width: 1199px) {
   .callout {
-    padding-left: 0.5em;
+    padding-left: 0.7em;
     padding-right: 0.5em; } }
 .callout-bordered {
   border: 1px solid #d1d4d7;

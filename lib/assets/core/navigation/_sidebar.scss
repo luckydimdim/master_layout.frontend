@@ -254,6 +254,12 @@ body:not(.top-nav) {
             }
         }
     }
+
+    @include media-breakpoint-down(lg) {
+        .sidebar {
+            width: 170px;
+        }
+    }
 }
 
 @include media-breakpoint-up(sm) {

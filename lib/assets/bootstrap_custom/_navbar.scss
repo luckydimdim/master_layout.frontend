@@ -55,6 +55,12 @@ header.navbar {
         background-size: $navbar-brand-logo-size;
         @include borders($navbar-brand-border);
     }
+
+    @include media-breakpoint-down(lg) {
+        a.navbar-brand {
+            width: 169px;
+        }
+    }
 }
 
 header.navbar {
