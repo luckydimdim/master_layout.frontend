@@ -534,22 +534,22 @@ dl.row > dd + dt {
 
 @media (max-width: 1199px) {
   h1, .h1 {
-    font-size: 1.875rem; }
+    font-size: 1.75rem; }
 
   h2, .h2 {
-    font-size: 1.5rem; }
+    font-size: 1.4rem; }
 
   h3, .h3 {
-    font-size: 1.3125rem; }
+    font-size: 1.225rem; }
 
   h4, .h4 {
-    font-size: 1.125rem; }
+    font-size: 1.05rem; }
 
   h5, .h5 {
-    font-size: 0.9375rem; }
+    font-size: 0.875rem; }
 
   h6, .h6 {
-    font-size: 0.75rem; } }
+    font-size: 0.7rem; } }
 .img-fluid, .carousel-inner > .carousel-item > img,
 .carousel-inner > .carousel-item > a > img {
   max-width: 100%;
