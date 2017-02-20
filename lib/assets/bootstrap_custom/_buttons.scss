@@ -9,6 +9,6 @@
 
 @include media-breakpoint-down(lg) {
     .btn {
-        @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $btn-border-radius-sm);
+        @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm * 0.7, $btn-border-radius-sm);
     }
 }
