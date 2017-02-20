@@ -50,6 +50,12 @@
                     color: $body-color;
                     border-bottom: 1px solid $border-color;
                 }
+
+                @include media-breakpoint-down(lg) {
+                    a.nav-link {
+                        line-height: 35px;
+                    }
+                }
             }
         }
     }
