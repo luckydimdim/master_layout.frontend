@@ -29,9 +29,14 @@ class MasterLayoutComponent implements AfterViewInit {
   void smartResize() {
     var documentHeight = window.innerHeight;
     var bodyHeight = querySelector('body').clientHeight;
+    var menu = querySelector('.sidebar-nav .nav').clientHeight;
 
-    if (documentHeight > bodyHeight) {
+    var contentHeight = max(bodyHeight, menu);
+
+    if (documentHeight > contentHeight) {
       querySelector('body').style.minHeight = documentHeight.toString() +'px';
+    } else {
+      querySelector('body').style.minHeight = contentHeight.toString() +'px';
     }
   }
 }
