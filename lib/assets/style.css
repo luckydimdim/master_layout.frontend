@@ -9149,6 +9149,8 @@ ul.leaders span + span {
       @media (max-width: 1199px) {
         .cm-contract nav ul.nav li.nav-item a.nav-link {
           line-height: 35px; } }
+      .cm-contract nav ul.nav li.nav-item a.nav-link .active, .cm-contract nav body:not(.top-nav) .sidebar ul.nav li.nav-item a.nav-link a.nav-link.router-link-active, body:not(.top-nav) .sidebar .cm-contract nav ul.nav li.nav-item a.nav-link a.nav-link.router-link-active {
+        color: #20a8d8; }
   @media (max-width: 1199px) {
     .cm-contract nav {
       width: 170px;

@@ -56,6 +56,10 @@
                         line-height: 35px;
                     }
                 }
+
+                a.nav-link .active {
+                    color: $brand-primary;
+                }
             }
         }
     }
