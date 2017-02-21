@@ -1,8 +1,13 @@
 .breadcrumb {
     position: relative;
     margin-bottom: 1.5 * $spacer-y;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
 
     @include borders($breadcrumb-borders);
+}
+
+@include media-breakpoint-down(lg) {
+    .breadcrumb {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
 }
