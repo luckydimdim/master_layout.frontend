@@ -9154,7 +9154,7 @@ ul.leaders span + span {
       .cm-contract nav ul.nav li.nav-item a.active:after, .cm-contract nav body:not(.top-nav) .sidebar ul.nav li.nav-item a.nav-link.router-link-active:after, body:not(.top-nav) .sidebar .cm-contract nav ul.nav li.nav-item a.nav-link.router-link-active:after {
         content: "  \f100";
         font-family: FontAwesome;
-        font-weight: 900; }
+        font-size: 14px; }
   @media (max-width: 1199px) {
     .cm-contract nav {
       width: 170px;
