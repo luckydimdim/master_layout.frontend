@@ -2714,8 +2714,9 @@ tbody.collapse.in {
 
 @media (max-width: 1199px) {
   .input-group-addon {
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    min-width: 35px;
     font-size: 0.675rem; } }
 .nav {
   padding-left: 0;
