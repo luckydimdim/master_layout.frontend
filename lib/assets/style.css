@@ -9117,7 +9117,7 @@ ul.leaders span + span {
   border: 1px solid #d1d4d7; }
   .cm-contract nav {
     width: 240px;
-    padding: 15px 0 15px 15px; }
+    padding: 15px; }
     .cm-contract nav .btn-block {
       margin-bottom: 15px; }
     .cm-contract nav ul.nav li.nav-item {
