@@ -3,18 +3,28 @@ import 'dart:html';
 
 @Directive(selector: '[navbar-toggler]')
 class NavBarTooglerDirective {
-  NavBarTooglerDirective(ElementRef element) {}
+  final ElementRef _element;
+
+  NavBarTooglerDirective(ElementRef this._element) {}
 
   @HostListener('click')
   toggleOpen() {
-    if (querySelector('body').classes.contains('sidebar-nav')) {
-      querySelector('body').classes.toggle('compact-nav');
+    var trigger = _element.nativeElement as HtmlElement;
+    if (trigger == null)
+      return false;
 
-      if (querySelector('body').classes.contains('compact-nav')) {
-        window.localStorage['body-class'] = 'compact-nav';
-      } else {
-        window.localStorage['body-class'] = '';
-      }
+    String classToToggle = '';
+    if (trigger.classes.contains('mobile-toggler'))
+      classToToggle = 'mobile-open';
+    else
+      classToToggle = 'compact-nav';
+
+    querySelector('body').classes.toggle(classToToggle);
+
+    if (querySelector('body').classes.contains(classToToggle)) {
+      window.localStorage['body-class'] = classToToggle;
+    } else {
+      window.localStorage['body-class'] = '';
     }
 
     return false;
