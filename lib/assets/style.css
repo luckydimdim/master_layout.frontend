@@ -6581,6 +6581,10 @@ nav.top-nav {
         color: #20a8d8;
         border-right-color: #d1d4d7;
         border-left-color: #d1d4d7; }
+    @media (max-width: 1199px) {
+      .aside-menu .nav-tabs .nav-link {
+        padding-top: 0.5rem;
+        padding-op: 0.5rem; } }
     .aside-menu .nav-tabs .nav-item:first-child .nav-link {
       border-left: 0; }
   .aside-menu .tab-content {

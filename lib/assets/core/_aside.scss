@@ -22,6 +22,14 @@
                 border-left-color: $border-color;
             }
         }
+
+        @include media-breakpoint-down(lg) {
+            .nav-link {
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+            }
+        }
+
         .nav-item:first-child {
             .nav-link {
                 border-left: 0;
