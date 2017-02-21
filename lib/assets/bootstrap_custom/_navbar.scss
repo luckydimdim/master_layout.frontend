@@ -63,6 +63,12 @@ header.navbar {
     }
 }
 
+@include media-breakpoint-down(lg) {
+    header.navbar {
+        line-height: 54px;
+    }
+}
+
 header.navbar {
     .navbar-brand {
         margin-right: 0;

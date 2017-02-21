@@ -3161,6 +3161,9 @@ header.navbar {
     header.navbar a.navbar-brand {
       width: 169px; } }
 
+@media (max-width: 1199px) {
+  header.navbar {
+    line-height: 54px; } }
 header.navbar .navbar-brand {
   margin-right: 0; }
 
@@ -3649,6 +3652,8 @@ body:not(.top-nav) .sidebar ul.nav li.nav-item .navbar-nav a.nav-link.router-lin
 .breadcrumb {
   position: relative;
   margin-bottom: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   border-bottom: 1px solid #d1d4d7; }
 
 .pagination {
