@@ -1,10 +1,6 @@
 .breadcrumb {
-    margin-bottom: 0;
-    @include borders($breadcrumb-borders);
-}
+    position: relative;
+    margin-bottom: 1.5 * $spacer-y;
 
-.breadcrumb::after {
-    content: "";
-    display: inherit;
-    clear: inherit;
+    @include borders($breadcrumb-borders);
 }

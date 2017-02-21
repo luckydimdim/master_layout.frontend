@@ -6,7 +6,6 @@
       <li class="nav-item">
         <a class="nav-link navbar-toggler layout-toggler" href="#" navbar-toggler>☰</a>
       </li>
-      <breadcrumb></breadcrumb>
     </ul>
 
     <ul class="nav navbar-nav float-xs-right hidden-md-down">
@@ -267,7 +266,10 @@
 
 <!-- Main content -->
 <main class="main">
-  <div class="container-fluid mt-1">
+  <!-- Breadcrumb -->
+  <breadcrumb></breadcrumb>
+
+  <div class="container-fluid">
     <ng-content></ng-content>
   </div>
   <!--/.container-fluid -->
