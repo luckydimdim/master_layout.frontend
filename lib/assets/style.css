@@ -3168,11 +3168,11 @@ header.navbar .navbar-brand {
   margin-right: 0; }
 
 .navbar-toggler, .aside-toggle {
-  padding: 0 .75em;
+  padding: 0.75em;
   line-height: 51px; }
 
 .aside-toggle {
-  padding: 0 .75em;
+  padding: 0.75em;
   line-height: 51px; }
 
 header.navbar .navbar-nav .nav-link {
@@ -6584,7 +6584,7 @@ nav.top-nav {
     @media (max-width: 1199px) {
       .aside-menu .nav-tabs .nav-link {
         padding-top: 0.5rem;
-        padding-op: 0.5rem; } }
+        padding-bottom: 0.5rem; } }
     .aside-menu .nav-tabs .nav-item:first-child .nav-link {
       border-left: 0; }
   .aside-menu .tab-content {
