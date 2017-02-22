@@ -5,10 +5,11 @@ import 'package:angular2/core.dart';
 import 'breadcrumb/breadcrumb_component.dart';
 import 'sidebar/sidebar_component.dart';
 import 'package:aside/aside_component.dart';
+import 'package:aside/aside_service.dart';
 import 'shared/aside_toggler_directive.dart';
 import 'shared/navbar_toggler_directive.dart';
 
-@Component(selector: 'master-layout')
+@Component(selector: 'master-layout', providers: const [const Provider(AsideService, useClass: AsideService)])
 @View(templateUrl: 'master_layout_component.html', directives: const [
   BreadcrumbComponent,
   SidebarComponent,
