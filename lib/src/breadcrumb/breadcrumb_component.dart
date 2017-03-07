@@ -1,6 +1,6 @@
 import 'package:angular2/core.dart';
 import 'package:angular2/router.dart';
-import 'package:angular2/platform/common.dart' as Common;
+import 'package:angular2/platform/common.dart';
 
 class BreadcrumbData {
   String displayName;
@@ -13,7 +13,7 @@ class BreadcrumbComponent
     implements AfterViewInit {
   final Router _router;
   final ChangeDetectorRef _changeDetectorRef;
-  Common.Location _location;
+  Location _location;
 
   Map<Type, BreadcrumbData> items = new Map<Type, BreadcrumbData>();
 
