@@ -9150,7 +9150,8 @@ ul.leaders span + span {
         .cm-contract nav ul.nav li.nav-item a.nav-link {
           line-height: 35px; } }
       .cm-contract nav ul.nav li.nav-item a.active, .cm-contract nav body:not(.top-nav) .sidebar ul.nav li.nav-item a.nav-link.router-link-active, body:not(.top-nav) .sidebar .cm-contract nav ul.nav li.nav-item a.nav-link.router-link-active {
-        font-weight: 900; }
+        font-weight: 900;
+        cursor: text; }
       .cm-contract nav ul.nav li.nav-item a.active:after, .cm-contract nav body:not(.top-nav) .sidebar ul.nav li.nav-item a.nav-link.router-link-active:after, body:not(.top-nav) .sidebar .cm-contract nav ul.nav li.nav-item a.nav-link.router-link-active:after {
         content: "  \f100";
         font-family: FontAwesome;
