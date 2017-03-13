@@ -21,7 +21,7 @@ class BreadcrumbComponent
 
   @override
   void ngAfterViewInit() {
-    _buildBreadcrumbs(this._router.currentInstruction);
+    _buildBreadcrumbs(this._router.root.currentInstruction);
 
     this._router.root.subscribe((e) {
       this._router.recognize(e).then((i) {
