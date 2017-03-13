@@ -1,4 +1,4 @@
-<ol class="breadcrumb" id="breadcrumbContent">
+<ol class="breadcrumb">
 	<li [ngSwitch]="last" class="breadcrumb-item" *ngFor="let item of items.values;let last = last"
 	    [ngClass]="{'active': last}">
 		<template [ngSwitchWhen]="true">
