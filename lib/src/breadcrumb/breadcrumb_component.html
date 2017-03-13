@@ -1,6 +1,11 @@
 <ol class="breadcrumb" id="breadcrumbContent">
-	<li class="breadcrumb-item" *ngFor="let item of items.values">
-		<a [attr.href]="item.url" [innerHtml]="item.displayName"></a>
+	<li [ngSwitch]="last" class="breadcrumb-item" *ngFor="let item of items.values;let last = last"
+	    [ngClass]="{'active': last}">
+		<template [ngSwitchWhen]="true">
+			{{item.displayName}}
+		</template>
+		<template [ngSwitchWhen]="false">
+			<a [attr.href]="item.url">{{item.displayName}}</a>
+		</template>
 	</li>
-
 </ol>

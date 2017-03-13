@@ -1,5 +1,6 @@
 import 'dart:core';
 
+import 'package:alert/src/alert_service.dart';
 import 'package:angular2/platform/browser.dart';
 import 'package:angular2/core.dart';
 import 'package:angular2/src/core/reflection/reflection.dart';
@@ -21,6 +22,7 @@ main() async {
   ComponentRef ref = await bootstrap(MasterLayoutComponent, const [
     ROUTER_PROVIDERS,
     const Provider(LocationStrategy, useClass: HashLocationStrategy),
+    const Provider(AlertService),
   ]);
 
   if (isDebug) {
