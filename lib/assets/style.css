@@ -2712,6 +2712,11 @@ tbody.collapse.in {
   white-space: nowrap;
   vertical-align: middle; }
 
+.input-group-addon-light {
+  background-color: #fff;
+  border-color: rgba(0, 0, 0, 0.15);
+  color: rgba(0, 0, 0, 0.65); }
+
 @media (max-width: 1199px) {
   .input-group-addon {
     padding-top: 0;
@@ -6062,6 +6067,9 @@ body {
 
   .font-5xl {
     font-size: 1.75rem !important; } }
+.small-caps {
+  font-variant: small-caps; }
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -8158,6 +8166,34 @@ footer.footer {
     background: #a0cf3c; }
     .btn-vimeo:hover::before {
       background: #93c130; }
+
+.btn-light {
+  color: rgba(0, 0, 0, 0.65);
+  background-color: #fff;
+  border-color: rgba(0, 0, 0, 0.15); }
+  .btn-light:hover {
+    color: rgba(0, 0, 0, 0.65);
+    background-color: #e6e6e6;
+    border-color: rgba(0, 0, 0, 0.15); }
+  .btn-light:focus, .btn-light.focus {
+    color: rgba(0, 0, 0, 0.65);
+    background-color: #e6e6e6;
+    border-color: rgba(0, 0, 0, 0.15); }
+  .btn-light:active, .btn-light.active, body:not(.top-nav) .sidebar ul.nav li.nav-item a.btn-light.nav-link.router-link-active, .open > .btn-light.dropdown-toggle {
+    color: rgba(0, 0, 0, 0.65);
+    background-color: #e6e6e6;
+    border-color: rgba(0, 0, 0, 0.15);
+    background-image: none; }
+    .btn-light:active:hover, .btn-light:active:focus, .btn-light:active.focus, .btn-light.active:hover, body:not(.top-nav) .sidebar ul.nav li.nav-item a.btn-light.nav-link.router-link-active:hover, .btn-light.active:focus, body:not(.top-nav) .sidebar ul.nav li.nav-item a.btn-light.nav-link.router-link-active:focus, .btn-light.active.focus, body:not(.top-nav) .sidebar ul.nav li.nav-item a.btn-light.focus.nav-link.router-link-active, .open > .btn-light.dropdown-toggle:hover, .open > .btn-light.dropdown-toggle:focus, .open > .btn-light.dropdown-toggle.focus {
+      color: rgba(0, 0, 0, 0.65);
+      background-color: #d4d4d4;
+      border-color: rgba(0, 0, 0, 0.15); }
+  .btn-light.disabled:focus, .btn-light.disabled.focus, .btn-light:disabled:focus, .btn-light:disabled.focus {
+    background-color: #fff;
+    border-color: rgba(0, 0, 0, 0.15); }
+  .btn-light.disabled:hover, .btn-light:disabled:hover {
+    background-color: #fff;
+    border-color: rgba(0, 0, 0, 0.15); }
 
 hr.transparent {
   border-top: 1px solid transparent; }
