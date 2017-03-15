@@ -9147,6 +9147,10 @@ ul.leaders span + span {
   margin-top: -100px; }
 
 /** /PRELOADER **/
+.cm-plus, .cm-minus {
+  line-height: 2.3;
+  cursor: pointer; }
+
 .cm-contract {
   position: relative;
   background: #fff;
