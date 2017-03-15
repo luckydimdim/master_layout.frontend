@@ -566,4 +566,7 @@
 
 .btn-light {
     @include button-variant($btn-light-color, $btn-light-bg, $btn-light-border);
+    line-height: 1.4;
+    padding-left: 0.65rem;
+    padding-right: 0.65rem;
 }
