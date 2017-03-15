@@ -6,6 +6,10 @@
 }
 
 .input-group-addon-light {
+    min-width: 40px;
+    white-space: nowrap;
+    vertical-align: middle; // Match the inputs
+
     background-color: #fff;
     border-color: rgba(0, 0, 0, 0.15);
     color: rgba(0, 0, 0, 0.65);
