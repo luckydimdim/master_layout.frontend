@@ -1898,6 +1898,9 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   .form-inline .has-feedback .form-control-feedback {
     top: 0; } }
 
+.form-control {
+  line-height: unset; }
+
 @media (max-width: 1199px) {
   .form-control {
     padding: 0.25rem 0.5rem;
@@ -2299,11 +2302,13 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%; }
 
-.btn .tag, .well.well-sm.bg-faded .btn-sm .tag, .well.well-sm.bg-faded .btn-group-sm > .btn .tag {
-  position: absolute;
-  top: 2px;
-  right: 6px;
-  font-size: 9px; }
+.btn, .well.well-sm.bg-faded .btn-sm, .well.well-sm.bg-faded .btn-group-sm > .btn {
+  line-height: unset; }
+  .btn .tag, .well.well-sm.bg-faded .btn-sm .tag, .well.well-sm.bg-faded .btn-group-sm > .btn .tag {
+    position: absolute;
+    top: 2px;
+    right: 6px;
+    font-size: 9px; }
 
 @media (max-width: 1199px) {
   .btn, .well.well-sm.bg-faded .btn-sm, .well.well-sm.bg-faded .btn-group-sm > .btn {
@@ -8175,7 +8180,6 @@ footer.footer {
   color: rgba(0, 0, 0, 0.65);
   background-color: #fff;
   border-color: rgba(0, 0, 0, 0.15);
-  line-height: 1.25;
   padding-left: 0.65rem;
   padding-right: 0.65rem;
   border-color: rgba(0, 0, 0, 0.15); }

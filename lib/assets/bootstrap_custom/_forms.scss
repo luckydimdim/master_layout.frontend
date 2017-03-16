@@ -4,6 +4,10 @@
 // Textual form controls
 //
 
+.form-control {
+  line-height: unset;
+}
+
 @include media-breakpoint-down(lg) {
   .form-control {
     padding: 0.25rem 0.5rem;
