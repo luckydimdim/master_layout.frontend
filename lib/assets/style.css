@@ -8171,10 +8171,10 @@ footer.footer {
   color: rgba(0, 0, 0, 0.65);
   background-color: #fff;
   border-color: rgba(0, 0, 0, 0.15);
-  line-height: 1.4;
+  line-height: 1.25;
   padding-left: 0.65rem;
   padding-right: 0.65rem;
-  border-color: 1px solid rgba(0, 0, 0, 0.15); }
+  border-color: rgba(0, 0, 0, 0.15); }
   .btn-light:hover {
     color: rgba(0, 0, 0, 0.65);
     background-color: #e6e6e6;
