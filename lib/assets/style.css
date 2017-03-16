@@ -2723,6 +2723,10 @@ tbody.collapse.in {
     padding-bottom: 0;
     min-width: 35px;
     font-size: 0.675rem; } }
+.input-group-btn:not(:last-child) > .btn, .well.well-sm.bg-faded .input-group-btn:not(:last-child) > .btn-sm, .well.well-sm.bg-faded .btn-group-sm.input-group-btn:not(:last-child) > .btn,
+.input-group-btn:not(:last-child) > .btn-group {
+  margin-right: -2px; }
+
 .nav {
   padding-left: 0;
   margin-bottom: 0;
