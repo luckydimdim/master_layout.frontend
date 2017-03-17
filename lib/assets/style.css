@@ -9164,6 +9164,12 @@ ul.leaders span + span {
 .cm-plus, .cm-minus, .cm-plus:hover, .cm-minus:hover, .cm-plus:active, .cm-minus:active {
   border-color: rgba(0, 0, 0, 0.15); }
 
+.cm-minus:hover, .cm-minus:active {
+  background-color: #ff5454; }
+
+.cm-plus:hover, .cm-plus:active {
+  background-color: #79c447; }
+
 .cm-plus span {
   position: relative; }
 
