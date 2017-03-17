@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -9159,10 +9160,23 @@ ul.leaders span + span {
   margin-top: -100px; }
 
 /** /PRELOADER **/
+/** BIG PLUS-MINUS **/
 .cm-plus, .cm-minus {
-  line-height: 2.3;
-  cursor: pointer; }
+  border-color: rgba(0, 0, 0, 0.15); }
 
+.cm-plus span {
+  position: relative; }
+
+.cm-plus span:before {
+  content: "—";
+  position: absolute;
+  top: 0.05rem;
+  left: 0.1rem;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+/** BIG PLUS-MINUS **/
 .cm-contract {
   position: relative;
   background: #fff;
