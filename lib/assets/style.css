@@ -9161,7 +9161,7 @@ ul.leaders span + span {
 
 /** /PRELOADER **/
 /** BIG PLUS-MINUS **/
-.cm-plus, .cm-minus {
+.cm-plus, .cm-minus, .cm-plus:hover, .cm-minus:hover, .cm-plus:active, .cm-minus:active {
   border-color: rgba(0, 0, 0, 0.15); }
 
 .cm-plus span {
