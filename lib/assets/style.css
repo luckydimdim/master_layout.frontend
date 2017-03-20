@@ -8216,6 +8216,8 @@ footer.footer {
       background-color: #fff; }
   .btn-light-disabled:active {
     background-color: #fff; }
+  .btn-light-disabled:focus {
+    background-color: #fff; }
 
 hr.transparent {
   border-top: 1px solid transparent; }
