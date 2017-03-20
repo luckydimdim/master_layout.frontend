@@ -8208,6 +8208,13 @@ footer.footer {
     background-color: #fff;
     border-color: rgba(0, 0, 0, 0.15); }
 
+.btn-light-disabled {
+  background-color: #fff; }
+  .btn-light-disabled:hover {
+    background-color: #fff; }
+    .btn-light-disabled:hover:active {
+      background-color: #fff; }
+
 hr.transparent {
   border-top: 1px solid transparent; }
 

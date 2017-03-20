@@ -570,3 +570,15 @@
     padding-right: 0.65rem;
     border-color: rgba(0, 0, 0, 0.15);
 }
+
+.btn-light-disabled {
+    background-color: #fff;
+
+    &:hover {
+        background-color: #fff;
+
+        &:active {
+            background-color: #fff;
+        }
+    }
+}
