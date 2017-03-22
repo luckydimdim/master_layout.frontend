@@ -9198,6 +9198,11 @@ ul.leaders span + span {
   transform: rotate(90deg); }
 
 /** BIG PLUS-MINUS **/
+/** CURSORS **/
+.cursor-pointer {
+  cursor: pointer; }
+
+/** /CURSORS **/
 .cm-contract {
   position: relative;
   background: #fff;
