@@ -19,6 +19,15 @@ import 'package:alert/alert_component.dart';
   NavBarTooglerDirective,
   AsideTogglerDirective])
 class MasterLayoutComponent implements AfterViewInit {
+    Router _router;
+
+  MasterLayoutComponent(this._router) {
+    _router.root.subscribe((e) {
+      window.scrollTo(0, 0);
+    });
+  }
+  
+  
   @override
   void ngAfterViewInit() {
     smartResize();
