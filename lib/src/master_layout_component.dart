@@ -9,6 +9,7 @@ import 'package:aside/aside_service.dart';
 import 'shared/aside_toggler_directive.dart';
 import 'shared/navbar_toggler_directive.dart';
 import 'package:alert/alert_component.dart';
+import 'package:angular2/router.dart';
 
 @Component(selector: 'master-layout', providers: const [const Provider(AsideService, useClass: AsideService)])
 @View(templateUrl: 'master_layout_component.html', directives: const [
