@@ -2714,7 +2714,6 @@ tbody.collapse.in {
 
 .input-group-addon,
 .input-group-btn {
-  /*min-width: 40px;*/
   white-space: nowrap;
   vertical-align: middle; }
 
@@ -8210,6 +8209,18 @@ footer.footer {
   .btn-light.disabled:hover, .btn-light:disabled:hover {
     background-color: #fff;
     border-color: rgba(0, 0, 0, 0.15); }
+
+.btn-light-sm {
+  min-width: 2rem; }
+
+.btn-light-md {
+  min-width: 4rem; }
+
+.btn-light-lg {
+  min-width: 6rem; }
+
+.btn-light-xl {
+  min-width: 8rem; }
 
 .btn-light-disabled {
   background-color: #fff; }

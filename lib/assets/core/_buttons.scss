@@ -571,6 +571,22 @@
     border-color: rgba(0, 0, 0, 0.15);
 }
 
+.btn-light-sm {
+    min-width: 2rem;
+}
+
+.btn-light-md {
+    min-width: 4rem;
+}
+
+.btn-light-lg {
+    min-width: 6rem;
+}
+
+.btn-light-xl {
+    min-width: 8rem;
+}
+
 .btn-light-disabled {
     background-color: #fff;
 
