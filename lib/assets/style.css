@@ -2714,7 +2714,7 @@ tbody.collapse.in {
 
 .input-group-addon,
 .input-group-btn {
-  min-width: 40px;
+  /*min-width: 40px;*/
   white-space: nowrap;
   vertical-align: middle; }
 
@@ -2731,7 +2731,7 @@ tbody.collapse.in {
     font-size: 0.675rem; } }
 .input-group-btn:not(:last-child) > .btn, .well.well-sm.bg-faded .input-group-btn:not(:last-child) > .btn-sm, .well.well-sm.bg-faded .btn-group-sm.input-group-btn:not(:last-child) > .btn,
 .input-group-btn:not(:last-child) > .btn-group {
-  margin-right: -2px; }
+  margin-right: -1px; }
 
 .nav {
   padding-left: 0;
