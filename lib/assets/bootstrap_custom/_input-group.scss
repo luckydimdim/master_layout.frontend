@@ -5,9 +5,10 @@
     vertical-align: middle; // Match the inputs
 }
 
-/*.input-group {
-    border-collapse: collapse;
-}*/
+.input-group {
+    /*border-collapse: collapse;*/
+    border-spacing: 0;
+}
 
 .input-group-addon-light {
     background-color: #fff;

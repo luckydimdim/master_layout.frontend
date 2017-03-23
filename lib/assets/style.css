@@ -2718,9 +2718,10 @@ tbody.collapse.in {
   white-space: nowrap;
   vertical-align: middle; }
 
-/*.input-group {
-    border-collapse: collapse;
-}*/
+.input-group {
+  /*border-collapse: collapse;*/
+  border-spacing: 0; }
+
 .input-group-addon-light {
   background-color: #fff;
   border-color: rgba(0, 0, 0, 0.15);
