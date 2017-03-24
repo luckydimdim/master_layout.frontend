@@ -9254,7 +9254,7 @@ ul.leaders span + span {
 .cm-plus span:before {
   content: "—";
   position: absolute;
-  top: 0.077rem;
+  top: 0.05rem;
   left: 0.1rem;
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
