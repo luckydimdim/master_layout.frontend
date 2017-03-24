@@ -8236,6 +8236,48 @@ footer.footer {
     background-color: #fff;
     outline: 0; }
 
+.btn-tiny {
+  color: rgba(0, 0, 0, 0.65);
+  background-color: #fff;
+  border-color: rgba(0, 0, 0, 0.15);
+  padding-left: 0.65rem;
+  padding-right: 0.65rem;
+  border: none;
+  background-color: transparent;
+  color: #2a2c36; }
+  .btn-tiny:hover {
+    color: rgba(0, 0, 0, 0.65);
+    background-color: #e6e6e6;
+    border-color: rgba(0, 0, 0, 0.15); }
+  .btn-tiny:focus, .btn-tiny.focus {
+    color: rgba(0, 0, 0, 0.65);
+    background-color: #e6e6e6;
+    border-color: rgba(0, 0, 0, 0.15); }
+  .btn-tiny:active, .btn-tiny.active, body:not(.top-nav) .sidebar ul.nav li.nav-item a.btn-tiny.nav-link.router-link-active, .open > .btn-tiny.dropdown-toggle {
+    color: rgba(0, 0, 0, 0.65);
+    background-color: #e6e6e6;
+    border-color: rgba(0, 0, 0, 0.15);
+    background-image: none; }
+    .btn-tiny:active:hover, .btn-tiny:active:focus, .btn-tiny:active.focus, .btn-tiny.active:hover, body:not(.top-nav) .sidebar ul.nav li.nav-item a.btn-tiny.nav-link.router-link-active:hover, .btn-tiny.active:focus, body:not(.top-nav) .sidebar ul.nav li.nav-item a.btn-tiny.nav-link.router-link-active:focus, .btn-tiny.active.focus, body:not(.top-nav) .sidebar ul.nav li.nav-item a.btn-tiny.focus.nav-link.router-link-active, .open > .btn-tiny.dropdown-toggle:hover, .open > .btn-tiny.dropdown-toggle:focus, .open > .btn-tiny.dropdown-toggle.focus {
+      color: rgba(0, 0, 0, 0.65);
+      background-color: #d4d4d4;
+      border-color: rgba(0, 0, 0, 0.15); }
+  .btn-tiny.disabled:focus, .btn-tiny.disabled.focus, .btn-tiny:disabled:focus, .btn-tiny:disabled.focus {
+    background-color: #fff;
+    border-color: rgba(0, 0, 0, 0.15); }
+  .btn-tiny.disabled:hover, .btn-tiny:disabled:hover {
+    background-color: #fff;
+    border-color: rgba(0, 0, 0, 0.15); }
+  .btn-tiny:hover {
+    outline: 0; }
+    .btn-tiny:hover:active {
+      background-color: transparent;
+      outline: 0; }
+  .btn-tiny:active {
+    outline: 0; }
+  .btn-tiny:focus {
+    outline: 0; }
+
 hr.transparent {
   border-top: 1px solid transparent; }
 
