@@ -6424,90 +6424,92 @@ body:not(.top-nav) .sidebar {
     width: 50px; }
     body.compact-nav .sidebar .sidebar-nav {
       overflow: visible; }
-    body.compact-nav .sidebar ul.nav li.nav-title, body.compact-nav .sidebar ul.nav li.divider {
-      display: none; }
-    body.compact-nav .sidebar ul.nav li.nav-item {
-      border-left: 0 !important;
-      overflow: hidden;
+    body.compact-nav .sidebar ul.nav {
       width: 50px; }
-      body.compact-nav .sidebar ul.nav li.nav-item ul {
-        background: #fff; }
-      body.compact-nav .sidebar ul.nav li.nav-item a.nav-link {
-        position: relative;
-        padding: 0 15px 0 0;
-        margin: 0;
-        line-height: 50px;
-        white-space: nowrap;
-        border-left: 0 !important; }
-        body.compact-nav .sidebar ul.nav li.nav-item a.nav-link.nav-dropdown-toggle::before {
-          display: none; }
-        body.compact-nav .sidebar ul.nav li.nav-item a.nav-link i {
-          display: block;
-          float: left;
-          width: 50px;
-          height: 50px;
-          padding: 0;
-          margin: 0 !important;
-          font-size: 18px;
-          line-height: 50px; }
-        body.compact-nav .sidebar ul.nav li.nav-item a.nav-link .tag {
-          position: absolute;
-          top: 14px;
-          right: 15px;
-          display: none; }
-        body.compact-nav .sidebar ul.nav li.nav-item a.nav-link:hover {
-          width: 200px; }
-          body.compact-nav .sidebar ul.nav li.nav-item a.nav-link:hover .tag {
-            display: inline; }
-      body.compact-nav .sidebar ul.nav li.nav-item ul {
-        position: absolute;
-        top: 50px;
-        left: 50px; }
-        body.compact-nav .sidebar ul.nav li.nav-item ul li {
+      body.compact-nav .sidebar ul.nav li.nav-title, body.compact-nav .sidebar ul.nav li.divider {
+        display: none; }
+      body.compact-nav .sidebar ul.nav li.nav-item {
+        border-left: 0 !important;
+        overflow: hidden;
+        width: 50px; }
+        body.compact-nav .sidebar ul.nav li.nav-item ul {
+          background: #fff; }
+        body.compact-nav .sidebar ul.nav li.nav-item a.nav-link {
           position: relative;
-          padding: 0; }
-          body.compact-nav .sidebar ul.nav li.nav-item ul li a.nav-link {
-            width: 150px; }
-          body.compact-nav .sidebar ul.nav li.nav-item ul li ul, body.compact-nav .sidebar ul.nav li.nav-item ul li ol {
+          padding: 0 15px 0 0;
+          margin: 0;
+          line-height: 50px;
+          white-space: nowrap;
+          border-left: 0 !important; }
+          body.compact-nav .sidebar ul.nav li.nav-item a.nav-link.nav-dropdown-toggle::before {
+            display: none; }
+          body.compact-nav .sidebar ul.nav li.nav-item a.nav-link i {
+            display: block;
+            float: left;
+            width: 50px;
+            height: 50px;
+            padding: 0;
+            margin: 0 !important;
+            font-size: 18px;
+            line-height: 50px; }
+          body.compact-nav .sidebar ul.nav li.nav-item a.nav-link .tag {
             position: absolute;
-            top: 0;
-            left: 100%; }
-      body.compact-nav .sidebar ul.nav li.nav-item.nav-dropdown.open {
-        background: #20a8d8; }
-        body.compact-nav .sidebar ul.nav li.nav-item.nav-dropdown.open > a.nav-link i {
-          color: #fff; }
-        body.compact-nav .sidebar ul.nav li.nav-item.nav-dropdown.open > ul, body.compact-nav .sidebar ul.nav li.nav-item.nav-dropdown.open > ol {
-          display: none; }
-      body.compact-nav .sidebar ul.nav li.nav-item:hover {
-        width: 200px;
-        overflow: visible;
-        background: #20a8d8;
-        transition: 0s; }
-        body.compact-nav .sidebar ul.nav li.nav-item:hover > a.nav-link {
-          width: 200px; } }
-      @media (min-width: 576px) and (max-width: 1199px) {
-        body.compact-nav .sidebar ul.nav li.nav-item:hover > a.nav-link {
-          width: 169px; } }
-@media (min-width: 576px) {
-        body.compact-nav .sidebar ul.nav li.nav-item:hover > ul, body.compact-nav .sidebar ul.nav li.nav-item:hover > ol {
-          max-height: 10000px;
-          display: inline;
-          transition: 0s; }
-          body.compact-nav .sidebar ul.nav li.nav-item:hover > ul li, body.compact-nav .sidebar ul.nav li.nav-item:hover > ol li {
+            top: 14px;
+            right: 15px;
+            display: none; }
+          body.compact-nav .sidebar ul.nav li.nav-item a.nav-link:hover {
             width: 200px; }
-            body.compact-nav .sidebar ul.nav li.nav-item:hover > ul li a.nav-link, body.compact-nav .sidebar ul.nav li.nav-item:hover > ol li a.nav-link {
-              width: 200px; } }
+            body.compact-nav .sidebar ul.nav li.nav-item a.nav-link:hover .tag {
+              display: inline; }
+        body.compact-nav .sidebar ul.nav li.nav-item ul {
+          position: absolute;
+          top: 50px;
+          left: 50px; }
+          body.compact-nav .sidebar ul.nav li.nav-item ul li {
+            position: relative;
+            padding: 0; }
+            body.compact-nav .sidebar ul.nav li.nav-item ul li a.nav-link {
+              width: 150px; }
+            body.compact-nav .sidebar ul.nav li.nav-item ul li ul, body.compact-nav .sidebar ul.nav li.nav-item ul li ol {
+              position: absolute;
+              top: 0;
+              left: 100%; }
+        body.compact-nav .sidebar ul.nav li.nav-item.nav-dropdown.open {
+          background: #20a8d8; }
+          body.compact-nav .sidebar ul.nav li.nav-item.nav-dropdown.open > a.nav-link i {
+            color: #fff; }
+          body.compact-nav .sidebar ul.nav li.nav-item.nav-dropdown.open > ul, body.compact-nav .sidebar ul.nav li.nav-item.nav-dropdown.open > ol {
+            display: none; }
+        body.compact-nav .sidebar ul.nav li.nav-item:hover {
+          width: 200px;
+          overflow: visible;
+          background: #20a8d8;
+          transition: 0s; }
+          body.compact-nav .sidebar ul.nav li.nav-item:hover > a.nav-link {
+            width: 200px; } }
         @media (min-width: 576px) and (max-width: 1199px) {
-          body.compact-nav .sidebar ul.nav li.nav-item:hover > ul li, body.compact-nav .sidebar ul.nav li.nav-item:hover > ol li {
-            width: 169px; }
-            body.compact-nav .sidebar ul.nav li.nav-item:hover > ul li a.nav-link, body.compact-nav .sidebar ul.nav li.nav-item:hover > ol li a.nav-link {
-              width: 169px; } }
+          body.compact-nav .sidebar ul.nav li.nav-item:hover > a.nav-link {
+            width: 169px; } }
 @media (min-width: 576px) {
-        body.compact-nav .sidebar ul.nav li.nav-item:hover.nav-dropdown.open > ul, body.compact-nav .sidebar ul.nav li.nav-item:hover.nav-dropdown.open > ol {
-          display: inline; } }
-    @media (min-width: 576px) and (max-width: 1199px) {
-      body.compact-nav .sidebar ul.nav li.nav-item:hover {
-        width: 169px; } }
+          body.compact-nav .sidebar ul.nav li.nav-item:hover > ul, body.compact-nav .sidebar ul.nav li.nav-item:hover > ol {
+            max-height: 10000px;
+            display: inline;
+            transition: 0s; }
+            body.compact-nav .sidebar ul.nav li.nav-item:hover > ul li, body.compact-nav .sidebar ul.nav li.nav-item:hover > ol li {
+              width: 200px; }
+              body.compact-nav .sidebar ul.nav li.nav-item:hover > ul li a.nav-link, body.compact-nav .sidebar ul.nav li.nav-item:hover > ol li a.nav-link {
+                width: 200px; } }
+          @media (min-width: 576px) and (max-width: 1199px) {
+            body.compact-nav .sidebar ul.nav li.nav-item:hover > ul li, body.compact-nav .sidebar ul.nav li.nav-item:hover > ol li {
+              width: 169px; }
+              body.compact-nav .sidebar ul.nav li.nav-item:hover > ul li a.nav-link, body.compact-nav .sidebar ul.nav li.nav-item:hover > ol li a.nav-link {
+                width: 169px; } }
+@media (min-width: 576px) {
+          body.compact-nav .sidebar ul.nav li.nav-item:hover.nav-dropdown.open > ul, body.compact-nav .sidebar ul.nav li.nav-item:hover.nav-dropdown.open > ol {
+            display: inline; } }
+      @media (min-width: 576px) and (max-width: 1199px) {
+        body.compact-nav .sidebar ul.nav li.nav-item:hover {
+          width: 169px; } }
 
 nav.top-nav {
   position: absolute;
@@ -9264,6 +9266,10 @@ ul.leaders span + span {
   cursor: pointer; }
 
 /** /CURSORS **/
+/**  **/
+.borderless {
+  border: none; }
+
 .cm-contract {
   position: relative;
   background: #fff;
