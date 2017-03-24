@@ -295,6 +295,7 @@ body:not(.top-nav) {
             }
 
             ul.nav {
+                width: $sidebar-compact-width;
 
                 li.nav-title, li.divider {
                     display: none;
