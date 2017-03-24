@@ -8240,8 +8240,7 @@ footer.footer {
   color: rgba(0, 0, 0, 0.65);
   background-color: #fff;
   border-color: rgba(0, 0, 0, 0.15);
-  padding-left: 0.65rem;
-  padding-right: 0.65rem;
+  padding: 0 0.65rem;
   border: none;
   background-color: transparent;
   color: #2a2c36; }

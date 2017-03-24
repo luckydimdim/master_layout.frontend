@@ -610,8 +610,7 @@
 
 .btn-tiny {
     @include button-variant($btn-light-color, $btn-light-bg, $btn-light-border);
-    padding-left: 0.65rem;
-    padding-right: 0.65rem;
+    padding: 0 0.65rem;
     border: none;
     background-color: transparent;
     color: $gray-dark;
