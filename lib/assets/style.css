@@ -8269,13 +8269,16 @@ footer.footer {
     background-color: #fff;
     border-color: rgba(0, 0, 0, 0.15); }
   .btn-tiny:hover {
-    outline: 0; }
+    outline: 0;
+    background-color: transparent; }
     .btn-tiny:hover:active {
       background-color: transparent;
       outline: 0; }
   .btn-tiny:active {
+    background-color: transparent;
     outline: 0; }
   .btn-tiny:focus {
+    background-color: transparent;
     outline: 0; }
 
 hr.transparent {

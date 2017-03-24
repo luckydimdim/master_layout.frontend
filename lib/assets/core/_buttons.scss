@@ -618,6 +618,7 @@
 
     &:hover {
         outline: 0;
+        background-color: transparent;
 
         &:active {
             background-color: transparent;
@@ -626,10 +627,12 @@
     }
 
     &:active {
+        background-color: transparent;
         outline: 0;
     }
 
     &:focus {
+        background-color: transparent;
         outline: 0;
     }
 }
