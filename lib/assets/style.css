@@ -1,4 +1,4 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -9266,6 +9266,10 @@ ul.leaders span + span {
   cursor: pointer; }
 
 /** /CURSORS **/
+/**  **/
+.borderless {
+  border: none; }
+
 .cm-contract {
   position: relative;
   background: #fff;
