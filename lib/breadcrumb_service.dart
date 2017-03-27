@@ -1,0 +1,1 @@
+export 'src/breadcrumb/breadcrumb_service.dart';

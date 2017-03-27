@@ -1,6 +1,7 @@
 import 'dart:html';
 import 'dart:math';
 import 'package:angular2/core.dart';
+import 'package:angular2/router.dart';
 
 import 'breadcrumb/breadcrumb_component.dart';
 import 'sidebar/sidebar_component.dart';
@@ -9,9 +10,11 @@ import 'package:aside/aside_service.dart';
 import 'shared/aside_toggler_directive.dart';
 import 'shared/navbar_toggler_directive.dart';
 import 'package:alert/alert_component.dart';
-import 'package:angular2/router.dart';
 
-@Component(selector: 'master-layout', providers: const [const Provider(AsideService, useClass: AsideService)])
+
+import 'breadcrumb/breadcrumb_service.dart';
+
+@Component(selector: 'master-layout', providers: const [const Provider(AsideService, useClass: AsideService), const Provider(BreadcrumbService, useClass: BreadcrumbService)])
 @View(templateUrl: 'master_layout_component.html', directives: const [
   AlertComponent,
   BreadcrumbComponent,

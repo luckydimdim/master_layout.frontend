@@ -1,5 +1,5 @@
 <ol class="breadcrumb">
-	<li [ngSwitch]="last" class="breadcrumb-item" *ngFor="let item of items.values;let last = last"
+	<li [ngSwitch]="last" class="breadcrumb-item" *ngFor="let item of items.values;let last = last; trackBy: trackByFn"
 	    [ngClass]="{'active': last}">
 		<template [ngSwitchWhen]="true">
 			{{item.displayName}}
