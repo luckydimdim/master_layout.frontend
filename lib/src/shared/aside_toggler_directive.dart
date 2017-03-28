@@ -1,13 +1,17 @@
-import 'package:angular2/core.dart';
 import 'dart:html';
+
+import 'package:angular2/core.dart';
+
+import 'package:aside/aside_service.dart';
 
 @Directive(selector: '[aside-toggler]')
 class AsideTogglerDirective {
-  AsideTogglerDirective(ElementRef element) {}
+  AsideService _service = null;
+
+  AsideTogglerDirective(ElementRef element, this._service);
 
   @HostListener('click')
   toggleOpen() {
-    querySelector('body').classes.toggle('aside-menu-open');
-    return false;
+    _service.togglePane();
   }
 }
