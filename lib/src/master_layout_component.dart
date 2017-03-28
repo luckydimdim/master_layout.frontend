@@ -14,7 +14,7 @@ import 'package:alert/alert_component.dart';
 
 import 'breadcrumb/breadcrumb_service.dart';
 
-@Component(selector: 'master-layout', providers: const [const Provider(AsideService, useClass: AsideService), const Provider(BreadcrumbService, useClass: BreadcrumbService)])
+@Component(selector: 'master-layout', providers: const Provider(BreadcrumbService, useClass: BreadcrumbService)])
 @View(templateUrl: 'master_layout_component.html', directives: const [
   AlertComponent,
   BreadcrumbComponent,
