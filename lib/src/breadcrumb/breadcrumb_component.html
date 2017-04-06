@@ -1,11 +1,11 @@
 <ol class="breadcrumb">
-	<li [ngSwitch]="last" class="breadcrumb-item" *ngFor="let item of items.values;let last = last; trackBy: trackByFn"
+	<li [ngSwitch]="last" class="breadcrumb-item" *ngFor="let item of items.values | visibleitems;let last = last; trackBy: trackByFn"
 	    [ngClass]="{'active': last}">
 		<template [ngSwitchWhen]="true">
 			{{item.displayName}}
 		</template>
 		<template [ngSwitchWhen]="false">
-			<a [attr.href]="item.url">{{item.displayName}}</a>
+			<a [attr.href]="item.externalUrl">{{item.displayName}}</a>
 		</template>
 	</li>
 </ol>

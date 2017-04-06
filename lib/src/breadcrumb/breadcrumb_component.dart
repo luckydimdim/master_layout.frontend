@@ -9,11 +9,19 @@ import 'breadcrumb_service.dart';
 class BreadcrumbData {
   String displayName;
   String url;
+  String externalUrl;
   Type type;
+  bool visible = true;
+}
+
+@Pipe(name: 'visibleitems')
+class VisibleItemsPipe extends PipeTransform {
+  Iterable<BreadcrumbData> transform(Iterable<BreadcrumbData> array) =>
+      array.where((e) => e.visible);
 }
 
 @Component(selector: 'breadcrumb')
-@View(templateUrl: 'breadcrumb_component.html')
+@View(templateUrl: 'breadcrumb_component.html', pipes: const[VisibleItemsPipe])
 class BreadcrumbComponent
     implements AfterViewInit, OnInit, OnDestroy {
   final Router _router;
@@ -68,16 +76,18 @@ class BreadcrumbComponent
     items.clear();
 
     var current_instruction = instruction;
+    BreadcrumbData prevBreadcrumbData = null;
 
-    items[current_instruction.component.componentType] =
-        getData(current_instruction);
+    do {
+      BreadcrumbData breadcrumbData = getData(
+          current_instruction, prevBreadcrumbData);
 
-    while (current_instruction.child != null) {
+      items[current_instruction.component.componentType] = breadcrumbData;
+
       current_instruction = current_instruction.child;
+      prevBreadcrumbData = breadcrumbData;
+    } while (current_instruction != null);
 
-      items[current_instruction.component.componentType] =
-          getData(current_instruction);
-    }
 
     items.forEach((k, v) {
       if (oldItems.containsKey(k)) {
@@ -88,14 +98,26 @@ class BreadcrumbComponent
     _changeDetectorRef.detectChanges();
   }
 
-  BreadcrumbData getData(Instruction instruction) {
+  BreadcrumbData getData(Instruction instruction,
+      BreadcrumbData prevBreadcrumbData) {
     var result = new BreadcrumbData();
 
     /*
     * TODO: Формирование ссылки
     * result.url = this._location.prepareExternalUrl(_router.generate([instruction.component.routeName]).toLinkUrl());
     * */
-    result.url = '#';
+
+    if (prevBreadcrumbData == null)
+      result.url = instruction.urlPath;
+    else
+      result.url = prevBreadcrumbData.url + '/' + instruction.urlPath;
+
+    if (instruction.urlPath.isEmpty) {
+      // скорее всего это дефолтовый роут, нечего его показывать. Дааа?
+      result.visible = false;
+    }
+
+    result.externalUrl = _location.prepareExternalUrl(result.url);
 
     result.type = instruction.component.runtimeType;
 
