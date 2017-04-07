@@ -29,6 +29,7 @@ class BreadcrumbComponent
   common.Location _location;
   final BreadcrumbService _breadcrumbService;
   StreamSubscription _onDataChangedEventSubscription;
+  StreamSubscription _rootSubscription;
 
   Map<Type, BreadcrumbData> items = new Map<Type, BreadcrumbData>();
 
@@ -50,7 +51,7 @@ class BreadcrumbComponent
   void ngAfterViewInit() {
     _buildBreadcrumbs(this._router.root.currentInstruction);
 
-    this._router.root.subscribe((e) {
+    _rootSubscription = this._router.root.subscribe((e) {
       this._router.recognize(e).then((i) {
         _buildBreadcrumbs(i);
       });
@@ -59,9 +60,17 @@ class BreadcrumbComponent
 
   @override
   Future ngOnDestroy() async {
+
     if (_onDataChangedEventSubscription != null) {
-      return _onDataChangedEventSubscription.cancel();
+      await _onDataChangedEventSubscription.cancel();
+      _onDataChangedEventSubscription = null;
     }
+
+    if (_rootSubscription != null) {
+      await _rootSubscription.cancel();
+      _rootSubscription = null;
+    }
+
   }
 
   void _buildBreadcrumbs(Instruction instruction) {

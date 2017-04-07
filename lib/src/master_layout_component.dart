@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:angular2/core.dart';
 import 'package:angular2/router.dart';
 
+import 'package:auth/auth_service.dart';
 import 'breadcrumb/breadcrumb_component.dart';
 import 'sidebar/sidebar_component.dart';
 import 'package:aside/aside_component.dart';
@@ -24,9 +25,10 @@ import 'breadcrumb/breadcrumb_service.dart';
     NavBarTooglerDirective,
     AsideTogglerDirective])
 class MasterLayoutComponent implements AfterViewInit {
-    Router _router;
+  final AuthenticationService _authenticationService;
+    final Router _router;
 
-  MasterLayoutComponent(this._router) {
+  MasterLayoutComponent(this._router, this._authenticationService) {
     _router.root.subscribe((e) {
       window.scrollTo(0, 0);
     });
@@ -56,4 +58,10 @@ class MasterLayoutComponent implements AfterViewInit {
       querySelector('body').style.minHeight = contentHeight.toString() +'px';
     }
   }
+
+  void logout() {
+    _authenticationService.logout();
+    _router.navigateByUrl(_authenticationService.authPath);
+  }
+
 }
