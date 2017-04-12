@@ -10,6 +10,10 @@ body {
     }
 }
 
+.font-xxs {
+    font-size: .5rem !important;
+}
+
 .font-xs {
     font-size: .75rem !important;
 }
@@ -43,6 +47,10 @@ body {
 }
 
 @include media-breakpoint-down(lg) {
+    .font-xxs {
+        font-size: .5rem * 0.7 !important;
+    }
+
     .font-xs {
         font-size: .75rem * 0.7 !important;
     }

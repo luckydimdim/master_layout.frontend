@@ -6,6 +6,7 @@ import 'package:angular2/core.dart';
 import 'package:angular2/src/core/reflection/reflection.dart';
 
 import 'package:aside/aside_service.dart';
+import 'package:auth/auth_service.dart';
 import 'package:master_layout/master_layout_component.dart';
 
 import 'package:angular2/router.dart';
@@ -24,7 +25,8 @@ main() async {
     ROUTER_PROVIDERS,
     const Provider(LocationStrategy, useClass: HashLocationStrategy),
     const Provider(AlertService),
-    const Provider(AsideService)
+    const Provider(AsideService),
+    const Provider(AuthenticationService)
   ]);
 
   if (isDebug) {
