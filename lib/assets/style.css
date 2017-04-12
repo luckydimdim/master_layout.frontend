@@ -9450,4 +9450,40 @@ ul.leaders span + span {
     .cm-contract main ul.leaders li {
       padding: 0.2em 0; }
 
+.cm-rates .rate table tr td {
+  width: 3%;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+  cursor: pointer; }
+.cm-rates .rate table tr td:hover {
+  background-color: #eee; }
+.cm-rates .rate_caption table tr td {
+  cursor: default; }
+.cm-rates .rate .row:last-child table tr td {
+  border-bottom: none; }
+.cm-rates .rate:last-child table tr td:first-child {
+  border-left: 2px solid #000; }
+.cm-rates .rate:last-child table tr td:last-child {
+  width: 7%;
+  border-left: 2px solid #000;
+  border-right: none;
+  cursor: default; }
+.cm-rates .rate_descr {
+  white-space: nowrap;
+  overflow: visible;
+  padding-top: 0.6rem; }
+.cm-rates .rate_group {
+  border: 2px solid #000; }
+.cm-rates .rate_name {
+  white-space: nowrap;
+  overflow: hidden; }
+.cm-rates .rate_total_caption {
+  overflow: hidden;
+  white-space: nowrap; }
+.cm-rates .rate_day_names {
+  border-top: 1px solid #000; }
+
 /*# sourceMappingURL=style.css.map */
