@@ -6034,7 +6034,7 @@ body {
     font-size: 0.675rem;
     line-height: 1.05rem; } }
 .font-xxs {
-  font-size: .5rem !important; }
+  font-size: .6rem !important; }
 
 .font-xs {
   font-size: .75rem !important; }
@@ -6062,7 +6062,7 @@ body {
 
 @media (max-width: 1199px) {
   .font-xxs {
-    font-size: 0.35rem !important; }
+    font-size: 0.42rem !important; }
 
   .font-xs {
     font-size: 0.525rem !important; }
