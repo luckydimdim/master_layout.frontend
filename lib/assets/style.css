@@ -9457,8 +9457,7 @@ ul.leaders span + span {
   text-align: center;
   vertical-align: middle;
   padding: 0;
-  cursor: pointer;
-  background-color: #fff; }
+  cursor: pointer; }
 .cm-rates .rate table tr td:hover {
   background-color: #eee; }
 .cm-rates .rate_caption table tr td {
