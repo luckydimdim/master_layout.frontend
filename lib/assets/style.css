@@ -9461,7 +9461,8 @@ ul.leaders span + span {
 .cm-rates .rate table tr td:hover {
   background-color: #eee; }
 .cm-rates .rate_caption table tr td {
-  cursor: default; }
+  cursor: default;
+  background-color: #fff; }
 .cm-rates .rate .row:last-child table tr td {
   border-bottom: none; }
 .cm-rates .rate:last-child table tr td:first-child {
