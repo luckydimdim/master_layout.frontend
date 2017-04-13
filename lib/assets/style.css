@@ -9480,6 +9480,9 @@ ul.leaders span + span {
 .cm-rates .rate_name {
   white-space: nowrap;
   overflow: hidden; }
+.cm-rates .rate_name_long {
+  white-space: nowrap;
+  overflow: visible; }
 .cm-rates .rate_total_caption {
   overflow: hidden;
   white-space: nowrap; }

@@ -47,6 +47,11 @@
         overflow: hidden
     }
 
+    .rate_name_long {
+        white-space: nowrap;
+        overflow: visible
+    }
+
     .rate_total_caption {
         overflow: hidden;
         white-space: nowrap
