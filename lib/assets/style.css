@@ -9486,6 +9486,9 @@ ul.leaders span + span {
 .cm-rates .rate_total_caption {
   overflow: hidden;
   white-space: nowrap; }
+.cm-rates .rate_caption .row div table tr:last-child td:last-child {
+  border-left: 1px solid #000;
+  width: 3%; }
 .cm-rates .rate_day_names {
   border-top: 1px solid #000; }
 

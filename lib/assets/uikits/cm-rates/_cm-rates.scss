@@ -57,6 +57,10 @@
         white-space: nowrap
     }
 
+    .rate_caption .row div table tr:last-child td:last-child {
+        border-left: 1px solid #000; width: 3%
+    }
+
     .rate_day_names {
         border-top: 1px solid #000;
     }
