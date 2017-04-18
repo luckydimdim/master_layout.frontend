@@ -9460,7 +9460,7 @@ ul.leaders span + span {
   cursor: pointer; }
 .cm-rates .rate table tr td:hover {
   background-color: #eee; }
-.cm-rates .rate_caption tr td {
+.cm-rates .rate_caption tr td, .cm-rates .total_column {
   pointer-events: none; }
 .cm-rates .rate_caption table tr td {
   cursor: default; }
