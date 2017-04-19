@@ -9496,4 +9496,7 @@ ul.leaders span + span {
 .cm-rates .rate_day_names {
   border-top: 1px solid #000; }
 
+.cm-requests nav {
+  width: 240px; }
+
 /*# sourceMappingURL=style.css.map */
