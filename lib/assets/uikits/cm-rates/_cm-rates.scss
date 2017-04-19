@@ -13,6 +13,10 @@
         background-color: #eee;
     }
 
+    .rate .no-events {
+        pointer-events: none;
+    }
+
     .rate_caption tr td, .total_column {
         pointer-events: none;
     }
