@@ -14,7 +14,7 @@ class BreadcrumbData {
   bool visible = true;
 }
 
-@Pipe(name: 'visibleitems')
+@Pipe('visibleitems')
 class VisibleItemsPipe extends PipeTransform {
   Iterable<BreadcrumbData> transform(Iterable<BreadcrumbData> array) =>
       array.where((e) => e.visible);
