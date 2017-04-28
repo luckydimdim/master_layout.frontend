@@ -5,6 +5,7 @@ import 'package:angular2/router.dart';
 
 import 'package:auth/auth_service.dart';
 import 'breadcrumb/breadcrumb_component.dart';
+import 'user_info_model.dart';
 import 'sidebar/sidebar_component.dart';
 import 'package:aside/aside_component.dart';
 import 'shared/aside_toggler_directive.dart';
@@ -28,7 +29,11 @@ class MasterLayoutComponent implements AfterViewInit {
   final AuthenticationService _authenticationService;
     final Router _router;
 
+    UserInfoModel userInfoModel = new UserInfoModel();
+
   MasterLayoutComponent(this._router, this._authenticationService) {
+    userInfoModel.name = _authenticationService.getUserName();
+
     _router.root.subscribe((e) {
       window.scrollTo(0, 0);
     });
