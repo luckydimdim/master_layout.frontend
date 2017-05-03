@@ -225,7 +225,7 @@
         <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button"
            aria-haspopup="true"
            aria-expanded="false">
-          <img src="packages/master_layout/assets/img/avatars/7.jpg" class="img-avatar"
+          <img [attr.src]="userInfoModel.avatarUrl"  class="img-avatar"
                alt="admin@bootstrapmaster.com">
           <span class="hidden-md-down">{{userInfoModel?.name}}</span>
         </a>

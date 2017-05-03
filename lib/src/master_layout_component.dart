@@ -34,6 +34,18 @@ class MasterLayoutComponent implements AfterViewInit {
   MasterLayoutComponent(this._router, this._authenticationService) {
     userInfoModel.name = _authenticationService.getUserName();
 
+    if (_authenticationService.getRoles().contains('CUSTOMER')){
+      // заказчик
+      userInfoModel.avatarUrl = 'packages/master_layout/assets/img/avatars/7.jpg';
+    }
+    else if (_authenticationService.getRoles().contains('CONTRACTOR')) {
+      // подрядчик
+      userInfoModel.avatarUrl = 'packages/master_layout/assets/img/avatars/icon-contractor.png';
+    }
+    else {
+      userInfoModel.avatarUrl = 'packages/master_layout/assets/img/avatars/7.jpg';
+    }
+
     _router.root.subscribe((e) {
       window.scrollTo(0, 0);
     });
