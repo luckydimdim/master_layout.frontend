@@ -27,18 +27,19 @@ import 'breadcrumb/breadcrumb_service.dart';
     AsideTogglerDirective])
 class MasterLayoutComponent implements AfterViewInit {
   final AuthenticationService _authenticationService;
+  final AuthorizationService _authorizationService;
     final Router _router;
 
     UserInfoModel userInfoModel = new UserInfoModel();
 
-  MasterLayoutComponent(this._router, this._authenticationService) {
+  MasterLayoutComponent(this._router, this._authenticationService, this._authorizationService) {
     userInfoModel.name = _authenticationService.getUserName();
 
-    if (_authenticationService.getRoles().contains('CUSTOMER')){
+    if (_authorizationService.getRoles().contains('CUSTOMER')){
       // заказчик
       userInfoModel.avatarUrl = 'packages/master_layout/assets/img/avatars/7.jpg';
     }
-    else if (_authenticationService.getRoles().contains('CONTRACTOR')) {
+    else if (_authorizationService.getRoles().contains('CONTRACTOR')) {
       // подрядчик
       userInfoModel.avatarUrl = 'packages/master_layout/assets/img/avatars/icon-contractor.png';
     }
