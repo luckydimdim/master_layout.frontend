@@ -54,13 +54,8 @@
   // don't honor that edge case; we style them as disabled anyway.
   &:disabled,
   &[readonly] {
-    background-color: $input-bg-disabled;
     // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655.
     opacity: 1;
-  }
-
-  &:disabled {
-    cursor: $cursor-disabled;
   }
 }
 

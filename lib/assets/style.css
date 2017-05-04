@@ -1681,10 +1681,7 @@ pre {
     color: #999;
     opacity: 1; }
   .form-control:disabled, .form-control[readonly] {
-    background-color: #d1d4d7;
     opacity: 1; }
-  .form-control:disabled {
-    cursor: not-allowed; }
 
 select.form-control:not([size]):not([multiple]) {
   height: calc(2.3125rem + 2px); }
@@ -9295,8 +9292,7 @@ ul.leaders span + span {
   border-bottom: 1px solid #000;
   text-align: center;
   vertical-align: middle;
-  padding: 0;
-  cursor: pointer; }
+  padding: 0; }
 .cm-rates .rate table tr td:hover {
   background-color: #eee; }
 .cm-rates .rate .no-events {
