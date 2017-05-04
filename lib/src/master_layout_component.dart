@@ -35,11 +35,11 @@ class MasterLayoutComponent implements AfterViewInit {
   MasterLayoutComponent(this._router, this._authenticationService, this._authorizationService) {
     userInfoModel.name = _authenticationService.getUserName();
 
-    if (_authorizationService.getRoles().contains('CUSTOMER')){
+    if (_authorizationService.getRoles().contains(Role.Customer)){
       // заказчик
       userInfoModel.avatarUrl = 'packages/master_layout/assets/img/avatars/7.jpg';
     }
-    else if (_authorizationService.getRoles().contains('CONTRACTOR')) {
+    else if (_authorizationService.getRoles().contains(Role.Contractor)) {
       // подрядчик
       userInfoModel.avatarUrl = 'packages/master_layout/assets/img/avatars/icon-contractor.png';
     }
