@@ -2713,7 +2713,7 @@ tbody.collapse.in {
   vertical-align: middle; }
 
 .input-group-fld {
-  min-width: px;
+  min-width: 100px;
   white-space: nowrap;
   vertical-align: middle; }
 
