@@ -33,7 +33,6 @@
     // Negative margin to only have a single, shared border between the two
     &:not(:last-child) {
         > .btn,
-        > .fld,
         > .btn-group {
             margin-right: (-$input-btn-border-width);
         }
