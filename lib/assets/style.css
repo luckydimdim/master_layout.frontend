@@ -2713,7 +2713,12 @@ tbody.collapse.in {
   vertical-align: middle; }
 
 .input-group-btn__fld {
-  min-width: 100px !important; }
+  width: 250px; }
+
+.input-group-btn__sel {
+  display: block;
+  width: 80px;
+  margin-left: -1px; }
 
 .input-group {
   /*border-collapse: collapse;*/
