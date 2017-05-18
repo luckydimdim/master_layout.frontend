@@ -2712,10 +2712,8 @@ tbody.collapse.in {
   white-space: nowrap;
   vertical-align: middle; }
 
-.input-group-fld {
-  min-width: 100px;
-  white-space: nowrap;
-  vertical-align: middle; }
+.input-group-btn__fld {
+  min-width: 100px !important; }
 
 .input-group {
   /*border-collapse: collapse;*/
@@ -2734,9 +2732,7 @@ tbody.collapse.in {
     font-size: 0.675rem; } }
 .input-group-btn:not(:last-child) > .btn, .well.well-sm.bg-faded .input-group-btn:not(:last-child) > .btn-sm, .well.well-sm.bg-faded .btn-group-sm.input-group-btn:not(:last-child) > .btn,
 .input-group-btn:not(:last-child) > .fld,
-.input-group-btn:not(:last-child) > .btn-group, .input-group-fld:not(:last-child) > .btn, .well.well-sm.bg-faded .input-group-fld:not(:last-child) > .btn-sm, .well.well-sm.bg-faded .btn-group-sm.input-group-fld:not(:last-child) > .btn,
-.input-group-fld:not(:last-child) > .fld,
-.input-group-fld:not(:last-child) > .btn-group {
+.input-group-btn:not(:last-child) > .btn-group {
   margin-right: -1px; }
 
 .nav {

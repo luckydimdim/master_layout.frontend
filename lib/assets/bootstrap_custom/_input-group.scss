@@ -5,10 +5,8 @@
     vertical-align: middle; // Match the inputs
 }
 
-.input-group-fld {
-  min-width: 100px;
-  white-space: nowrap;
-  vertical-align: middle; // Match the inputs
+.input-group-btn__fld {
+  min-width: 100px !important;
 }
 
 .input-group {
@@ -31,7 +29,7 @@
     }
 }
 
-.input-group-btn, .input-group-fld {
+.input-group-btn {
     // Negative margin to only have a single, shared border between the two
     &:not(:last-child) {
         > .btn,
