@@ -12,46 +12,51 @@ import 'shared/aside_toggler_directive.dart';
 import 'shared/navbar_toggler_directive.dart';
 import 'package:alert/alert_component.dart';
 
-
 import 'breadcrumb/breadcrumb_service.dart';
 
-@Component(selector: 'master-layout', providers: const [ const Provider(BreadcrumbService, useClass: BreadcrumbService) ])
-@View(
-  templateUrl: 'master_layout_component.html',
-  directives: const [
-    AlertComponent,
-    BreadcrumbComponent,
-    SidebarComponent,
-    AsideComponent,
-    NavBarTooglerDirective,
-    AsideTogglerDirective])
+@Component(
+    selector: 'master-layout',
+    providers: const [
+      const Provider(BreadcrumbService, useClass: BreadcrumbService)
+    ],
+    templateUrl: 'master_layout_component.html',
+    directives: const [
+      AlertComponent,
+      BreadcrumbComponent,
+      SidebarComponent,
+      AsideComponent,
+      NavBarTooglerDirective,
+      AsideTogglerDirective
+    ])
 class MasterLayoutComponent implements AfterViewInit {
   final AuthenticationService _authenticationService;
   final AuthorizationService _authorizationService;
-    final Router _router;
+  final Router _router;
 
-    UserInfoModel userInfoModel = new UserInfoModel();
+  UserInfoModel userInfoModel = new UserInfoModel();
 
-  MasterLayoutComponent(this._router, this._authenticationService, this._authorizationService) {
+  MasterLayoutComponent(
+      this._router, this._authenticationService, this._authorizationService) {
     userInfoModel.name = _authenticationService.getUserName();
 
-    if (_authorizationService.getRoles().contains(Role.Customer)){
+    if (_authorizationService.getRoles().contains(Role.Customer)) {
       // заказчик
-      userInfoModel.avatarUrl = 'packages/master_layout/assets/img/avatars/7.jpg';
-    }
-    else if (_authorizationService.getRoles().contains(Role.Contractor)) {
+      userInfoModel.avatarUrl =
+          'packages/master_layout/assets/img/avatars/7.jpg';
+    } else if (_authorizationService.getRoles().contains(Role.Contractor)) {
       // подрядчик
-      userInfoModel.avatarUrl = 'packages/master_layout/assets/img/avatars/icon-contractor.png';
-    }
-    else {
-      userInfoModel.avatarUrl = 'packages/master_layout/assets/img/avatars/7.jpg';
+      userInfoModel.avatarUrl =
+          'packages/master_layout/assets/img/avatars/icon-contractor.png';
+    } else {
+      userInfoModel.avatarUrl =
+          'packages/master_layout/assets/img/avatars/7.jpg';
     }
 
     _router.root.subscribe((e) {
       window.scrollTo(0, 0);
     });
   }
-  
+
   @override
   void ngAfterViewInit() {
     smartResize();
@@ -71,9 +76,9 @@ class MasterLayoutComponent implements AfterViewInit {
     var contentHeight = max(bodyHeight, menu);
 
     if (documentHeight > contentHeight) {
-      querySelector('body').style.minHeight = documentHeight.toString() +'px';
+      querySelector('body').style.minHeight = documentHeight.toString() + 'px';
     } else {
-      querySelector('body').style.minHeight = contentHeight.toString() +'px';
+      querySelector('body').style.minHeight = contentHeight.toString() + 'px';
     }
   }
 
@@ -81,5 +86,4 @@ class MasterLayoutComponent implements AfterViewInit {
     _authenticationService.logout();
     _router.navigateByUrl(_authenticationService.authPath);
   }
-
 }

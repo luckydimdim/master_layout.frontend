@@ -20,10 +20,11 @@ class VisibleItemsPipe extends PipeTransform {
       array.where((e) => e.visible);
 }
 
-@Component(selector: 'breadcrumb')
-@View(templateUrl: 'breadcrumb_component.html', pipes: const[VisibleItemsPipe])
-class BreadcrumbComponent
-    implements AfterViewInit, OnInit, OnDestroy {
+@Component(
+    selector: 'breadcrumb',
+    templateUrl: 'breadcrumb_component.html',
+    pipes: const [VisibleItemsPipe])
+class BreadcrumbComponent implements AfterViewInit, OnInit, OnDestroy {
   final Router _router;
   final ChangeDetectorRef _changeDetectorRef;
   common.Location _location;
@@ -40,11 +41,11 @@ class BreadcrumbComponent
   void ngOnInit() {
     _onDataChangedEventSubscription =
         _breadcrumbService.onDataChangedEvent.listen((e) {
-          if (items.containsKey(e.type)) {
-            items[e.type].displayName = e.displayName;
-            _changeDetectorRef.detectChanges();
-          }
-        });
+      if (items.containsKey(e.type)) {
+        items[e.type].displayName = e.displayName;
+        _changeDetectorRef.detectChanges();
+      }
+    });
   }
 
   @override
@@ -60,7 +61,6 @@ class BreadcrumbComponent
 
   @override
   Future ngOnDestroy() async {
-
     if (_onDataChangedEventSubscription != null) {
       await _onDataChangedEventSubscription.cancel();
       _onDataChangedEventSubscription = null;
@@ -70,12 +70,10 @@ class BreadcrumbComponent
       await _rootSubscription.cancel();
       _rootSubscription = null;
     }
-
   }
 
   void _buildBreadcrumbs(Instruction instruction) {
-    if (instruction == null)
-      return;
+    if (instruction == null) return;
 
     var oldItems = new Map<Type, BreadcrumbData>();
     items.forEach((k, v) {
@@ -88,15 +86,14 @@ class BreadcrumbComponent
     BreadcrumbData prevBreadcrumbData = null;
 
     do {
-      BreadcrumbData breadcrumbData = getData(
-          current_instruction, prevBreadcrumbData);
+      BreadcrumbData breadcrumbData =
+          getData(current_instruction, prevBreadcrumbData);
 
       items[current_instruction.component.componentType] = breadcrumbData;
 
       current_instruction = current_instruction.child;
       prevBreadcrumbData = breadcrumbData;
     } while (current_instruction != null);
-
 
     items.forEach((k, v) {
       if (oldItems.containsKey(k)) {
@@ -107,8 +104,8 @@ class BreadcrumbComponent
     _changeDetectorRef.detectChanges();
   }
 
-  BreadcrumbData getData(Instruction instruction,
-      BreadcrumbData prevBreadcrumbData) {
+  BreadcrumbData getData(
+      Instruction instruction, BreadcrumbData prevBreadcrumbData) {
     var result = new BreadcrumbData();
 
     /*
@@ -143,5 +140,4 @@ class BreadcrumbComponent
   trackByFn(index, item) {
     return item.runtimeType.toString();
   }
-
 }
