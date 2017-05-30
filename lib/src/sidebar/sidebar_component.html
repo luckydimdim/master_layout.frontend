@@ -8,13 +8,13 @@
 			<li class="nav-item">
 				<a class="nav-link" [cmRouterLink]="['Dashboard']"><i class="icon-home"></i> Рабочий стол </a>
 			</li>
-			<li class="nav-item">
+			<li class="nav-item" *ngIf="isCustomer || isContractor">
 				<a class="nav-link" [cmRouterLink]="['Contracts']"><i class="icon-docs"></i> Договоры </a>
 			</li>
-			<li class="nav-item">
+			<li class="nav-item" *ngIf="isCustomer || isContractor">
 				<a class="nav-link" [cmRouterLink]="['Requests']"><i class="icon-note"></i> Заявки </a>
 			</li>
-			<li class="nav-item">
+			<li class="nav-item" *ngIf="isCustomer || isContractor">
 				<a class="nav-link" [cmRouterLink]="['ObjectBudgetList']"><i class="icon-calculator"></i> Бюджеты </a>
 			</li>
 			<li class="nav-item">
@@ -23,13 +23,13 @@
 			<li class="nav-item">
 				<a class="nav-link" [cmRouterLink]="['ObjectList']"><i class="icon-grid"></i> Объекты </a>
 			</li>
-			<li class="nav-item">
+			<li class="nav-item" *ngIf="isCustomer || isContractor">
 				<a class="nav-link" [cmRouterLink]="['Analytics']"><i class="icon-pie-chart"></i> Аналитика </a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#"><i class="icon-graph"></i> Курсы валют </a>
 			</li>
-			<li class="nav-item">
+			<li class="nav-item" *ngIf="isCustomer || isContractor">
 				<a class="nav-link" [cmRouterLink]="['PaymentBudgetList']"><i class="icon-wallet"></i> Платежный бюджет </a>
 			</li>
 			<li class="nav-item" *ngIf="isAdmin">

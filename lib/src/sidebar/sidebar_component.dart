@@ -14,9 +14,13 @@ class SidebarComponent implements AfterViewInit {
 
   SidebarComponent(this._authorizationService) {
     isAdmin = _authorizationService.isInRole(Role.Administrator);
+    isCustomer = _authorizationService.isInRole(Role.Customer);
+    isContractor = _authorizationService.isInRole(Role.Contractor);
   }
 
   bool isAdmin = false;
+  bool isCustomer = false;
+  bool isContractor = false;
 
   @override
   void ngAfterViewInit() {
