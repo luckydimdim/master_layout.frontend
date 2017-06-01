@@ -223,3 +223,11 @@ ul.leaders span + div {
 .borderless {
   border: none;
 }
+
+@media print {
+  /* All your print styles go here */
+  breadcrumb, .card-header, footer, aside, sidebar, header { display: none !important; }
+  .card {
+    border: none
+  }
+}
