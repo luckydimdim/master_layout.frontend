@@ -1,0 +1,32 @@
+.cm-panes .attachments-pane {
+    > li {
+        line-height: 1.7;
+        height: auto;
+
+        .desc {
+          height: auto;
+        }
+
+        .title {
+          cursor: pointer;
+
+          a {
+            display: block;
+            overflow: hidden;
+            margin-right: 35px;
+          }
+        }
+
+        .actions {
+          right: 0px;
+
+          button {
+            padding: 0;
+
+            i {
+              color: red;
+            }
+          }
+        }
+    }
+}
