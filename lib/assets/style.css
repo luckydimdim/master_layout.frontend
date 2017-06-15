@@ -9688,22 +9688,22 @@ ul.leaders span + div {
 .cm-requests nav {
   width: 240px; }
 
-.cm-panes .attachments-pane li {
+.cm-panes .attachments-pane {
   line-height: 1.7;
   height: auto; }
-  .cm-panes .attachments-pane li .desc {
+  .cm-panes .attachments-pane .desc {
     height: auto; }
-  .cm-panes .attachments-pane li .title {
+  .cm-panes .attachments-pane .title {
     cursor: pointer; }
-    .cm-panes .attachments-pane li .title a {
+    .cm-panes .attachments-pane .title a {
       display: block;
       overflow: hidden;
       margin-right: 35px; }
-  .cm-panes .attachments-pane li .actions {
+  .cm-panes .attachments-pane .actions {
     right: 0px; }
-    .cm-panes .attachments-pane li .actions button {
+    .cm-panes .attachments-pane .actions button {
       padding: 0; }
-      .cm-panes .attachments-pane li .actions button i {
+      .cm-panes .attachments-pane .actions button i {
         color: red; }
 
 /*# sourceMappingURL=style.css.map */
