@@ -5126,6 +5126,36 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-print {
     display: none !important; } }
 
+/*
+
+import "angular2-calendar/angular2-calendar";
+import "chart.js/chart";
+import "datatables/datatables";
+import "daterangepicker/daterangepicker";
+import "fullcalendar/fullcalendar";
+import "gauge.js/gaugejs";
+import "ionRangeSlider/ionRangeSlider";
+
+import "select2/select2";
+
+
+*/
+/*!
+ * Ladda
+ * http://lab.hakim.se/ladda
+ * MIT licensed
+ *
+ * Copyright (C) 2016 Hakim El Hattab, http://hakim.se
+ */
+/*************************************
+ * CONFIG
+ */
+/*************************************
+ * MIXINS
+ */
+/*************************************
+ * BUTTON BASE
+ */
 .ladda-button {
   position: relative; }
 
@@ -9436,6 +9466,14 @@ ul.leaders span + div {
 
   .card {
     border: none; } }
+/** GRID SPINKIT WAVE **/
+.grid-loading-spin {
+  border: 1px solid #d1d4d7;
+  border-top: none;
+  margin-top: -40px;
+  padding-top: 40px; }
+
+/** /GRID SPINKIT WAVE **/
 .cm-contract {
   position: relative;
   background: #fff;
