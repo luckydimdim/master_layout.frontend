@@ -5,16 +5,16 @@
 			<li class="nav-title">
 				Разделы
 			</li>
-			<li class="nav-item">
+<!--			<li class="nav-item">
 				<a class="nav-link" [cmRouterLink]="['Dashboard']"><i class="icon-home"></i> Рабочий стол </a>
-			</li>
-			<li class="nav-item" *ngIf="isCustomer || isContractor">
+			</li>-->
+			<li class="nav-item">
 				<a class="nav-link" [cmRouterLink]="['Contracts']"><i class="icon-docs"></i> Договоры </a>
 			</li>
-			<li class="nav-item" *ngIf="isCustomer || isContractor">
+			<li class="nav-item">
 				<a class="nav-link" [cmRouterLink]="['Requests']"><i class="icon-note"></i> Заявки </a>
 			</li>
-			<li class="nav-item" *ngIf="isCustomer || isContractor">
+<!--			<li class="nav-item" *ngIf="isCustomer || isContractor">
 				<a class="nav-link" [cmRouterLink]="['ObjectBudgetList']"><i class="icon-calculator"></i> Бюджеты </a>
 			</li>
 			<li class="nav-item">
@@ -31,12 +31,12 @@
 			</li>
 			<li class="nav-item" *ngIf="isCustomer || isContractor">
 				<a class="nav-link" [cmRouterLink]="['PaymentBudgetList']"><i class="icon-wallet"></i> Платежный бюджет </a>
-			</li>
+			</li>-->
 			<li class="nav-item" *ngIf="isAdmin">
 				<a class="nav-link" [cmRouterLink]="['Administration']"><i class="icon-settings"></i> Администрирование </a>
 			</li>
 			
-			<li class="divider"></li>
+<!--			<li class="divider"></li>
 			<li class="nav-title">
 				Статистика
 			</li>
@@ -62,7 +62,7 @@
 				</div>
 				<progress class="progress progress-xs progress-danger m-0" value="95" max="100">95%</progress>
 				<small class="text-muted">95% заявок согласовано</small>
-			</li>
+			</li>-->
 		
 		</ul>
 	</nav>
