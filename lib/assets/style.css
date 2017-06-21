@@ -9412,9 +9412,11 @@ ul.leaders span + span {
 ul.leaders span + div {
   float: right;
   padding-left: 0.33em;
-  background: white;
-  max-width: 210px; }
+  background: white; }
 
+@media print {
+  ul.leaders span + div {
+    max-width: 200px; } }
 /** /DOTS **/
 /** PRELOADER **/
 .cm-preloader-cube {
