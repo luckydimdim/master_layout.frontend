@@ -9412,7 +9412,8 @@ ul.leaders span + span {
 ul.leaders span + div {
   float: right;
   padding-left: 0.33em;
-  background: white; }
+  background: white;
+  max-width: 210px; }
 
 /** /DOTS **/
 /** PRELOADER **/
