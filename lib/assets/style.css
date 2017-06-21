@@ -9416,7 +9416,7 @@ ul.leaders span + div {
 
 @media print {
   ul.leaders span + div {
-    max-width: 200px; } }
+    max-width: 190px; } }
 /** /DOTS **/
 /** PRELOADER **/
 .cm-preloader-cube {
